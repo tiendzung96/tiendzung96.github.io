@@ -1,4 +1,27 @@
-/* TABLET VIEW */
+/* TABLET VIEW & DESLTOP VIEW */
+
+@media only screen and (min-width: 37em) {
+    header{
+        text-align: center;
+    }
+
+    body{
+        text-align: center;
+    }
+
+    h1{
+        border: none;
+    }
+
+    section{
+       display: inline-block;
+       vertical-align: top;
+       width: 290px;
+       height: auto;
+       margin-bottom: 2em;
+       text-align: left;
+   }
+}
 
 @media only screen and (min-width: 37em) {
     header{
