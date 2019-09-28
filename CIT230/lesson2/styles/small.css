@@ -45,10 +45,9 @@ header{
     min-width: 290px;
 }
 main{
-    main{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
 }
 section{
     background-color: rgba(216, 214, 214, .4);
