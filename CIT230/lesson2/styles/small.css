@@ -24,6 +24,7 @@ h2{
     font-weight: 500;
     font-size: 1.75em;
     height: 2em;
+    border-radius: 10px 10px 0px 0px;
 }
 
 h3{
@@ -54,6 +55,7 @@ section{
     margin:0em .6em .6em .6em;
     padding-bottom: 2em;
     min-width: 290px;
+    border-radius: 10px;
 }
 section img {
     width: 100%;
