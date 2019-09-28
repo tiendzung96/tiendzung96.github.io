@@ -1,6 +1,6 @@
 /* TABLET VIEW */
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 37em) {
     header{
         text-align: center;
     }
@@ -16,7 +16,7 @@
     section{
        display: inline-block;
        vertical-align: top;
-       width: 210px;
+       width: 290px;
        height: auto;
        margin-bottom: 2em;
        text-align: left;
