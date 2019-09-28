@@ -1,3 +1,23 @@
-@media only screen and (max-width:32.5em){
-    
+@media only screen and (max-width:580px){
+    #homepage body {
+        width: 100%;
+        position: relative;
+        margin-top: 0px;
+        min-width: 350px;
+    }
+    #homepage header img{
+        width: 190px; 
+        height: auto; 
+        position: relative;
+        left: 20px;
+        top: 10px;
+    }
+    #homepage header {
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+    #homepage footer {
+        border-radius: 0px;
+    }
+
 }
