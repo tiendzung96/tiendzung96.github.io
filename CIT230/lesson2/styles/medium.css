@@ -1,0 +1,24 @@
+/* TABLET VIEW */
+
+@media only screen and (min-width: 420px) {
+    header{
+        text-align: center;
+    }
+
+    body{
+        text-align: center;
+    }
+
+    h1{
+        border: none;
+    }
+
+    section{
+       display: inline-block;
+       vertical-align: top;
+       width: 210px;
+       height: auto;
+       margin-bottom: 2em;
+       text-align: left;
+   }
+}
