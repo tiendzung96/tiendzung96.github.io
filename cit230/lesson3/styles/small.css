@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
 
 *{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;  
 }
 
 body{
@@ -81,7 +81,13 @@ h3{
 }
 
 p{
-    margin: 5pt 0pt 16pt 0pt;;
+    margin: 5pt 0pt 16pt 0pt;
+    line-height: 1.5em;
+
+}
+
+li{
+    line-height: 1.5em;
 }
 
 main{
@@ -145,7 +151,7 @@ section{
 }
 
 #color-scheme .dark-gray{
-    background-color: #353535;
+    background-color: #454545;
     color: white;
 }
 
@@ -156,3 +162,58 @@ section{
 #color-scheme th {
     padding: 15px;
 }
+
+/* -------AUDIENCE PAGE------- */
+
+#audience section img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    z-index: 1;
+    display: block;
+    margin: auto;
+    position: relative;
+    border: 5pt rgb(245, 245, 245) solid;
+}
+
+#audience .profile {
+    margin: 20pt;
+    text-align: center;
+}
+
+#audience .profile ul{
+    background-color: #525252;
+    color: rgb(211, 211, 211);
+    padding: 3em 15pt 15pt;
+    list-style-type: none;
+    border-radius: 10pt;
+    max-width: 260px;
+    margin: auto;
+    margin-top: -2.5em;
+    z-index: 0;
+    position: relative;
+    display: block;
+    box-shadow: 0px 0px 15px 1px #888888;
+   
+}
+
+#audience .profile li{
+    padding: 5pt;
+    font-weight: 400;
+}
+
+#audience .profile li:nth-child(1){
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    font-weight: 700;
+    color: white;
+}
+#audience .profile li:nth-child(2){
+    font-style: italic;
+}
+
+#audience .profile li b{
+    letter-spacing: 2pt;
+    color: white;
+}
+
