@@ -95,7 +95,7 @@ section{
 
 /* -------HOME PAGE------- */
 #home main img{
-    width: 100%;
+    width: 300px;
 }
 
 #home section:nth-child(odd){
