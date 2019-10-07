@@ -29,7 +29,6 @@
 
 @media only screen and (min-width: 65em){
     header{
-        padding: .3em;
         border-bottom: none;
         display: flex;
         background-color: #353535;
