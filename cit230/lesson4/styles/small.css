@@ -6,7 +6,11 @@
 
 body{
     min-width: 300px;
+    background-image: url("/cit230/lesson4/images/preston-background.jpg");
+    background-size: cover;
+    background-position: center bottom;
 }
+
 header{
     text-align: center;
     background-color: rgb(250, 250, 250);
@@ -82,9 +86,6 @@ nav a:visited{
         }
 
 #preston main{
-    background-image: url("/cit230/lesson4/images/preston-background.jpg");
-    background-size: cover;
-    background-position: left bottom;
     padding:25px;
 
 }
@@ -102,8 +103,8 @@ main .forecast5{
 main .forecast{
     border-radius: 10pt;
     background-color: #353535b0;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: .5em;
     color: white;
     padding: 20px;
@@ -112,14 +113,14 @@ main .forecast{
 main h1{
     border-left: .2em solid rgb(0, 157, 230);
     padding-left: .3em;
-    font-size: 3em;
+    font-size: 3.6em;
     font-weight: 700;
 }
 
 main h2{
     text-transform: uppercase;
     letter-spacing: 3pt;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 700;
     display: inline-block;
     background-color: #353535;
