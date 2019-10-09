@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 <body id="preston">
     <header>
@@ -26,10 +27,32 @@
         </nav>
     </header>
     <main>
-      <p> this is content</p>
+        <h1>Preston, Idaho</h1>
+        <div class="section-container">
+            <section>
+                <h2>6 Days Forecast</h2>
+                <div class ="forecast5">
+                    <div class ="forecast">Day 1<img src="images/rain-icon.png"></img></div>
+                    <div class ="forecast">Day 2<img src="images/rain-icon.png"></img></div>
+                    <div class ="forecast">Day 3<img src="images/rain-icon.png"></img></div>
+                    <div class ="forecast">Day 4<img src="images/rain-icon.png"></img></div>
+                    <div class ="forecast">Day 5<img src="images/rain-icon.png"></img></div>
+                    
+                </div>
+            </section>
+            <section>
+                    <h2>ALERT: Big Storm Coming to Preston</h2>
+                    <p>The Preston-area experienced the first of two periods of concentrated rain Tuesday night into Wednesday morning and a second is predicted Wednesday night into Thursday morning, forecasters say. Widespread rainfall estimates of 4 to 7 inches are expected through Thursday, with totals possibly reaching up to 12 inches in some isolated areas.</p>
+            </section>
+            <section>
+                    <h2>Contact Information</h2>
+                    <p>More Stuff Goes Here</p>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> <a href="http://douglasphan.com" target="_blank">Douglas Phan</a></p>
+        <p>&copy; Super Accurate Weather | Attributions | Douglas Phan</p>
+        <p><span id="currentYear"></span></p>
     </footer>
     <script src="scripts/toggleMenu.js"></script>
     <script src="scripts/currentDate.js"></script>
