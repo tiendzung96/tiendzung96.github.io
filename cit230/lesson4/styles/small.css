@@ -96,7 +96,6 @@ main .forecast5{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: center;
     max-width: 400px;
 }
 
