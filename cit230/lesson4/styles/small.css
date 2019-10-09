@@ -111,10 +111,11 @@ main .forecast{
 }
 
 main h1{
-    border-left: .2em solid rgb(0, 157, 230);
-    padding-left: .3em;
     font-size: 3.6em;
     font-weight: 700;
+    border-left: .2em solid rgb(0, 157, 230);
+    padding-left: .3em;
+
 }
 
 main h2{
@@ -127,15 +128,16 @@ main h2{
     color: white;
     padding: 5pt 10pt;
     max-width: 350px;
+    border-left: .5em solid rgb(0, 157, 230);
 
 }
 
 main p{
     max-width: 400px;
     padding: 25pt 15pt 15pt;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
     margin-top: -25pt;
-    border-radius: 8pt;
+    border-radius: 0pt 10pt 10pt 10pt;
     line-height: 1.3em;
 }
 
