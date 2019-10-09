@@ -4,10 +4,15 @@
 @media only screen and (min-width: 65em){
     header{
         border-bottom: none;
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
         background-color: #353535;
         
+    }
+
+    .navigation{
+        text-align: right;
+        margin-right: 1.2em;
     }
 
     header img{
