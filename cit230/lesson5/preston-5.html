@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/weather-site-icon.png">
+    <title>Super Accurate Weather | Yep, I Totally Saw It Coming</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <style>
+        table, td, th{
+            border: 1px black solid
+        }
+    </style>
+</head>
+<body id="preston">
+    <header>
+        <img class="black-logo" src="images/weather-sitelogo.png">
+        <img class="white-logo" src="images/weather-sitelogo-white.png">
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-5.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Preston, Idaho</h1>
+        <div class="section-container">
+            <section>
+                <h2>High Temperature Forecast</h2>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th id="day1"></th>
+                        <th id="day2"></th>
+                        <th id="day3"></th>
+                        <th id="day4"></th>
+                        <th id="day5"></th>
+                    </tr>
+                    <tr>
+                        <th>Forecast</th>
+                        <td id="">30&#8457;</td>
+                        <td>50&#8457;</td>
+                        <td>45&#8457;</td>
+                        <td>42&#8457;</td>
+                        <td>38&#8457;</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                    <h2>ALERT: Big Storm Coming to Preston</h2>
+                    <p>The Preston-area experienced the first of two periods of concentrated rain Tuesday night into Wednesday morning and a second is predicted Wednesday night into Thursday morning, forecasters say. Widespread rainfall estimates of 4 to 7 inches are expected through Thursday, with totals possibly reaching up to 12 inches in some isolated areas.</p>
+            </section>
+            <section>
+                    <h2>Contact Information</h2>
+                    <p>More Stuff Goes Here</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Super Accurate Weather | Attributions | Douglas Phan</p>
+        <p><span id="currentYear"></span></p>
+    </footer>
+    <script src="scripts/toggleMenu.js"></script>
+    <script src="scripts/currentDate.js"></script>
+</body>
+</html>
