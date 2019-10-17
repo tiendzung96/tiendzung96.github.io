@@ -28,6 +28,24 @@
     }
     
 }
+@media only screen and (min-width: 35em) and (max-width: 55em){
+
+    .section-container article img{
+        width: 250px;
+        height: auto;
+    }
+    #news article div{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10pt;
+        vertical-align: top;
+        
+    }
+    #news p{
+        margin-top: 0px;
+    }
+
+}
 
 @media only screen and (min-width: 55em){
 
