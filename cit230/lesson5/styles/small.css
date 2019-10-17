@@ -89,25 +89,29 @@ nav a:visited{
 
 #preston main{
     padding:25px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
 
 }
+
 
 #heroimg{
 /* The image used */
-    background-image: url("/cit230/lesson5/images/preston-cover-pano.jpg");
+    background-image: url("/cit230/lesson5/images/preston-cover.jpg");
     padding: 25px;
 
-  /* Set a specific height */
     min-height: 200px; 
 
-  /* Create the parallax scrolling effect */
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-bottom: 30px;
+
 }
 
-main h1{
+#heroimg h1{
     font-size: 3.6em;
     font-weight: 700;
     border-left: .2em solid rgb(0, 157, 230);
@@ -115,16 +119,56 @@ main h1{
     margin-top: 0px;
     color: white;
     text-shadow: 2px 2px 15px  #00000062;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  
 }
 
-main section{
+#heroimg section{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10pt;
+    color: white;
+    display: inline-block;
+    width: 200px;
+}
+
+#heroimg h2{
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-top: 0px;
+    border-bottom: white 1px solid;
+}
+
+#heroimg p{
+    margin: 2px;
+    font-size: .8em;
+    letter-spacing: 1pt;
+
+}
+
+main a:link{
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover{
+    text-decoration: none;
+    color: rgb(0, 157, 230);
+}
+
+main a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.forecast5{
+    display: none;
+}
+
+.section-container section{
     margin-bottom: 30pt;
 }
 
-main h2{
+
+.section-container h2{
     text-transform: uppercase;
     letter-spacing: 3pt;
     font-size: 1em;
@@ -138,14 +182,51 @@ main h2{
 
 }
 
-main p{
-    max-width: 400px;
+.section-container td, .section-container th{
+    text-align: left;
+    padding: 8pt;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.section-container article{
     padding: 25pt 15pt 15pt;
     background-color: rgba(255, 255, 255, 0.7);
     margin-top: -25pt;
     border-radius: 0pt 10pt 10pt 10pt;
     line-height: 1.3em;
 }
+#news{
+    max-width: 550px;
+}
+
+.article-date{
+   margin-top: 0px;
+   padding-bottom: 10px;
+   display: block;
+   font-weight: 700;
+}
+
+.section-container article img{
+    width: 100%;
+    max-width: 400px;
+}
+
+
+#contact iframe{
+    display: none;
+}
+
+.section-container h3{
+    font-size: 1em;
+    margin: 0px;
+}
+.section-container address{
+    font-style: normal;
+    font-size: .9em;
+    padding: 10px;
+}
+
 
 footer{
     background-color: #353535;

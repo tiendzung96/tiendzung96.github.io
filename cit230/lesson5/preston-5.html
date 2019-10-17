@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <style>
-        table, td, th{
-            border: 1px black solid
-        }
-    </style>
 </head>
 <body id="preston">
     <header>
@@ -24,7 +19,7 @@
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="preston-5.html">Preston</a></li>
+                <li><a href="preston-5.html" style="font-weight:700;">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -36,10 +31,20 @@
     <main>
         <div id="heroimg"> 
             <h1>Preston, Idaho</h1>
+            <section>
+                <h2>
+                    Weather Sumary
+                </h2>
+                <p><b>Currently:</b> Sunny</p>
+                <p><b>High:</b> 50&deg;F</p>
+                <p><b>Low:</b> 20&deg;F</p>
+                <p><b>Humidity:</b> 50%</p>
+                <p><b>Wind Speed:</b> 5mph</p>
+            </section>
         </div>
         
         <div class="section-container">
-            <section>
+            <section class="forecast5">
                 <h2>High Temperature Forecast</h2>
                 <table>
                     <tr>
@@ -61,12 +66,30 @@
                 </table>
             </section>
             <section id ="news">
-                    <h2>ALERT: Big Storm Coming to Preston</h2>
-                    <p>The Preston-area experienced the first of two periods of concentrated rain Tuesday night into Wednesday morning and a second is predicted Wednesday night into Thursday morning, forecasters say. Widespread rainfall estimates of 4 to 7 inches are expected through Thursday, with totals possibly reaching up to 12 inches in some isolated areas.</p>
+                    <h2>Founder's Day Parade</h2>
+                    <article>
+                        <span class ="article-date">October 19, 2019 @ 7:00pm</span>
+                        <img src="images/preston-parade.jpg">
+                        <p>The Annual Founder’s Day Parade will be held on Main Street. Be ready to bring out your best float decorating skills, because there will be a prize for Best Use of Theme, Most Entertaining, or the Most Original. Or if you’d like come watch the parade, and enjoy all that Preston has to offer.</p>
+                    </article>
             </section>
             <section id ="contact">
-                    <h2>Contact Information</h2>
-                    <p>More Stuff Goes Here</p>
+                    <h2>Contact Us</h2>
+                    <article>
+                        <div>
+                            <h3>
+                                Super Accurate Weather
+                            </h3>
+                            <address>
+                                <b>Address:</b> 42 S 1st W, Rexburg, ID 83440<br>
+                                <b>Email:</b> <a href="mailto:douglas@saw.com">douglas@saw.com</a><br>
+                                <b>Phone:</b> <a href="tel:+12082082082">(208) 208-2082</a>
+                            </address>
+                            <img src="images/social-media.png" style="width: 150px;"> 
+                        </div>
+
+                        <iframe width="100%" height="200" src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=42%20S%201st%20W%2C%20Apartment%201+(Super%20Accurate%20Weather)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">latitude longitude finder</a></iframe>
+                    </article>
             </section>
         </div>
     </main>
