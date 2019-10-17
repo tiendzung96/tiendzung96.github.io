@@ -34,7 +34,7 @@
     .section-container{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        column-gap: 10pt;
+        column-gap: 30pt;
     }
 
     #news{

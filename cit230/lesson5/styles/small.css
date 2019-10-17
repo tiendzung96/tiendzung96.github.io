@@ -196,9 +196,9 @@ main a:visited{
     border-radius: 0pt 10pt 10pt 10pt;
     line-height: 1.3em;
 }
-#news{
+/* #news{
     max-width: 550px;
-}
+} */
 
 .article-date{
    margin-top: 0px;
