@@ -98,7 +98,7 @@ nav a:visited{
 
 #heroimg{
 /* The image used */
-    background-image: url("/cit230/lesson5/images/preston-cover.jpg");
+    /* background-image: url("/cit230/lesson5/images/preston-cover.jpg"); */
     padding: 25px;
 
     min-height: 200px; 
@@ -163,6 +163,11 @@ main a:visited{
     display: none;
 }
 
+#digital-clock{
+    font-size: 3em;
+    padding: 15pt;
+}
+
 .section-container section{
     margin-bottom: 30pt;
 }
@@ -196,9 +201,6 @@ main a:visited{
     border-radius: 0pt 10pt 10pt 10pt;
     line-height: 1.3em;
 }
-/* #news{
-    max-width: 550px;
-} */
 
 .article-date{
    margin-top: 0px;
@@ -237,4 +239,38 @@ footer{
 
 footer p{
     margin:5px;
+}
+
+/* LIVE COVER STYLE*/
+
+.sunrise{
+    background-image: url("/cit230/lesson5/images/live-cover/preston-sunrise.jpg");
+}
+
+.sunrise-pano{
+    background-image: url("/cit230/lesson5/images/live-cover/preston-sunrise-pano.jpg");
+}
+
+.daytime{
+    background-image: url("/cit230/lesson5/images/live-cover/preston-daytime.jpg");
+}
+
+.daytime-pano{
+    background-image: url("/cit230/lesson5/images/live-cover/preston-daytime-pano.jpg");
+}
+
+.sunset{
+    background-image: url("/cit230/lesson5/images/live-cover/preston-sunset.jpg");
+}
+
+.sunset-pano{
+    background-image: url("/cit230/lesson5/images/live-cover/preston-sunset-pano.jpg");
+}
+
+.night{
+    background-image: url("/cit230/lesson5/images/live-cover/preston-night.jpg");
+}
+
+.night-pano{
+    background-image: url("/cit230/lesson5/images/live-cover/preston-night-pano.jpg");
 }
