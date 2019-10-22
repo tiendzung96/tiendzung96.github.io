@@ -1,7 +1,7 @@
 function liveCover(x) {
     var time = new Date();
     var h = time.getHours();
-
+    // var h = ;
     if (x.matches) { // If media query matches
         // console.log(h);
         if(h>=5 && h<8){ //SUNRISE PANO--------------------- 5am-8am
