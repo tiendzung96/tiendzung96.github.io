@@ -38,3 +38,4 @@ function liveCover(x) {
   var x = window.matchMedia("(min-width: 55em)");
   liveCover(x); // Call listener function at run time
   x.addListener(liveCover); // Attach listener function on state changes
+  setTimeout(liveCover, 3600000);
