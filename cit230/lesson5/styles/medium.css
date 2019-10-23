@@ -1,12 +1,12 @@
 /* TABLET VIEW */
 @media only screen and (min-width: 55em)and (max-width: 67em){
 
-    header li{
-        display: inline !important;
+    .navigation li{
+        display: inline;
     }
 
-    header li:first-child{
-        display: none !important;
+    .navigation li:first-child{
+        display: none;
     }
 
     header nav{
@@ -25,6 +25,7 @@
 
     .navigation{
         margin: .65em 0;
+
     }
     
 }
