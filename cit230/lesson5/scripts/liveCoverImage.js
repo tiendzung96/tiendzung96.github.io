@@ -12,7 +12,7 @@ function liveCover(x) {
         if(h>=5 && h<9){ //SUNRISE PANO--------------------- 5am-9am
             document.getElementById("heroimg").classList.remove("sunrise");
             document.getElementById("heroimg").classList.add("sunrise-pano");
-        } else if(h>=8 && h<17){ //DAYTIME PANO--------------------- 9am-5pm
+        } else if(h>=9 && h<17){ //DAYTIME PANO--------------------- 9am-5pm
             document.getElementById("heroimg").classList.remove("daytime");
             document.getElementById("heroimg").classList.add("daytime-pano");
         } else if(h>=17 && h<=20){ //SUNSET PANO--------------------- 5pm-8pm
@@ -27,7 +27,7 @@ function liveCover(x) {
         if(h>=5 && h<9){ //SUNRISE--------------------- 5am-8am
             document.getElementById("heroimg").classList.remove("sunrise-pano");
             document.getElementById("heroimg").classList.add("sunrise"); 
-        } else if(h>=8 && h<=17){ //DAYTIME--------------------- 8am-5pm
+        } else if(h>=9 && h<=17){ //DAYTIME--------------------- 8am-5pm
             document.getElementById("heroimg").classList.remove("daytime-pano");
             document.getElementById("heroimg").classList.add("daytime"); 
         } else if(h>17 && h<=20){ //SUNSET--------------------- 5pm-8pm
