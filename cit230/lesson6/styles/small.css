@@ -98,12 +98,12 @@ nav a:visited{
 
 #heroimg{
 /* The image used */
-    /* background-image: url("/cit230/lesson5/images/preston-cover.jpg"); */
+    background-image: url("/cit230/lesson6/images/franklin-small.jpg");
     padding: 25px;
 
     min-height: 200px; 
 
-    background-position: center;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -242,7 +242,7 @@ footer p{
 }
 
 /* LIVE COVER STYLE*/
-
+/* 
 .sunrise{
     background-image: url("/cit230/lesson5/images/live-cover/preston-sunrise.jpg");
 }
@@ -273,4 +273,4 @@ footer p{
 
 .night-pano{
     background-image: url("/cit230/lesson5/images/live-cover/preston-night-pano.jpg");
-}
+} */

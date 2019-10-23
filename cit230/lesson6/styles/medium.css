@@ -29,7 +29,9 @@
     
 }
 @media only screen and (min-width: 35em) and (max-width: 55em){
-
+    #heroimg{
+        background-image: url("/cit230/lesson6/images/franklin-medium.jpg");
+    }
     .section-container article img{
         width: 250px;
         height: auto;
@@ -75,8 +77,7 @@
     }
 
     #heroimg{
-            /* background-image: url("/cit230/lesson5/images/preston-cover-pano.jpg"); */
-            background-position: center; 
+            background-image: url("/cit230/lesson6/images/franklin-large.jpg");
             min-height: 150px;
             display: grid;
             grid-template-columns: 2.5fr 1fr;
