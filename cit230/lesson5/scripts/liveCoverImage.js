@@ -1,11 +1,11 @@
 function liveCover(x) {
     var time = new Date();
-    // var h = time.getHours();
+    var h = time.getHours();
     //TESTING LOG
     // var h = 6; //6am sunrise
     // var h = 10; //10am daytime
     // var h = 18; //6pm sunset
-    var h = 1; //1am starry night
+    // var h = 1; //1am starry night
 
     if (x.matches) { // If media query matches
         // console.log(h);
