@@ -4,7 +4,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    // console.table(jsonObject);  // temporary checking for valid response and data parsing
     const prophets = jsonObject['prophets'];
 
 
@@ -24,6 +24,7 @@ fetch(requestURL)
 
       let image = document.createElement('img');
       image.setAttribute('src', prophets[i].imageurl);
+      image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname +' - '+prophets[i].length);
       card.appendChild(image);
 
       document.querySelector('div.cards').appendChild(card);
@@ -31,5 +32,8 @@ fetch(requestURL)
     }
   })
 
-
-// });
+  WebFont.load({
+    google: {
+      families: ['Merriweather', ]
+    }
+  });
