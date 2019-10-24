@@ -1,8 +1,9 @@
-const weatherURL = 'http://api.openweathermap.org/data/2.5/weather?zip=83263,us&units=imperial&appid=9479da382fe4e6454b2b21f3e81c03d7';
-fetch(weatherURL)
-  .then((response) => response.json())
-  .then((weatherObject) => {
-    console.log(weatherObject);
+// const weatherURL = 'http://api.openweathermap.org/data/2.5/weather?zip=83263,us&units=imperial&appid=9479da382fe4e6454b2b21f3e81c03d7';
+// fetch(weatherURL)
+//   .then((response) => response.json())
+//   .then((weatherObject) => {
+//     console.log(weatherObject);
+
 
     let weather = {};
 
@@ -13,9 +14,10 @@ fetch(weatherURL)
     weather.humidity = weatherObject.main.humidity;
     weather.windSpeed = weatherObject.wind.speed;
 
+
 //WEATHER ICON
 
-    const imagesrc = 'https://openweathermap.org/img/w/' + weatherObject.weather[0].icon + '.png';  
+    const imagesrc = 'images/weather' + weatherObject.weather[0].icon + '.png';  
     const desc = weatherObject.weather[0].description;  // note how we reference the weather array
     document.getElementById('weather-icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
     document.getElementById('weather-icon').setAttribute('alt', desc);
@@ -38,4 +40,4 @@ fetch(weatherURL)
     document.getElementById('wind-chill').innerHTML = '<b>Wind Chill:</b> ' + weather.windChill;
     document.getElementById('wind-speed').innerHTML = '<b>Wind Speed:</b> ' + weather.windSpeed + ' mph';
 
-});
+// });
