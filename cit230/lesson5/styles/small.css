@@ -144,6 +144,10 @@ nav a:visited{
 
 }
 
+#weather-icon{
+    margin: -10px 0;
+}
+
 main a:link{
     text-decoration: none;
     color: black;
