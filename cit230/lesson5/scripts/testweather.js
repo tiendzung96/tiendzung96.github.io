@@ -10,5 +10,3 @@ if (hourWeather>5 && hourWeather<19){
 } else{
     weatherObject.weather[0].icon ="01n";
 }
-
-console.log(weatherObject.weather[0].icon);
