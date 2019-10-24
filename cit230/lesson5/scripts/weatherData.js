@@ -12,14 +12,16 @@
     weather.high = Math.ceil(weatherObject.main.temp_max);
     weather.low = Math.ceil(weatherObject.main.temp_min);
     weather.humidity = weatherObject.main.humidity;
-    weather.windSpeed = weatherObject.wind.speed;
+    weather.windSpeed = Math.ceil(weatherObject.wind.speed);
 
 
 //WEATHER ICON
 
-    const imagesrc = 'images/weather' + weatherObject.weather[0].icon + '.png';  
-    const desc = weatherObject.weather[0].description;  // note how we reference the weather array
-    document.getElementById('weather-icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+    const imagesrc = 'images/weather-icon/' + weatherObject.weather[0].icon + '.png';  
+    const desc = weatherObject.weather[0].description;  
+
+    document.getElementById('weather-icon').setAttribute('src', imagesrc); 
+
     document.getElementById('weather-icon').setAttribute('alt', desc);
 
     // console.log(weather);
