@@ -8,11 +8,11 @@
     let weather = {};
 
     weather.currentWeather = weatherObject.weather[0].main;
-    weather.currentTemp = Math.ceil(weatherObject.main.temp);
-    weather.high = Math.ceil(weatherObject.main.temp_max);
-    weather.low = Math.ceil(weatherObject.main.temp_min);
+    weather.currentTemp = Math.round(weatherObject.main.temp);
+    weather.high = Math.round(weatherObject.main.temp_max);
+    weather.low = Math.round(weatherObject.main.temp_min);
     weather.humidity = weatherObject.main.humidity;
-    weather.windSpeed = Math.ceil(weatherObject.wind.speed);
+    weather.windSpeed = Math.round(weatherObject.wind.speed);
 
 
 //WEATHER ICON
@@ -29,7 +29,7 @@
     let t = weather.currentTemp;
     let s = weather.windSpeed;
     if(weather.low <= 50 && s > 3){
-        weather.windChill = Math.ceil(35.74 + 0.6215*t - 35.75*Math.pow(s, 0.16)  + 0.4275*t*Math.pow(s, 0.16)) + '&deg;F';
+        weather.windChill = Math.round(35.74 + 0.6215*t - 35.75*Math.pow(s, 0.16)  + 0.4275*t*Math.pow(s, 0.16)) + '&deg;F';
     } else{
         weather.windChill = 'N/A';
     }
