@@ -4,6 +4,19 @@
     font-family: 'Raleway', sans-serif;  
 }
 
+#pancakes {
+    background-color: rgb(0, 157, 230);
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-size:1em;
+    font-weight: 700;
+}
+
+.hidden{
+    display: none;
+}
+
 body{
     min-width: 300px;
     background-image: url("/cit230/lesson4/images/preston-background.jpg");
