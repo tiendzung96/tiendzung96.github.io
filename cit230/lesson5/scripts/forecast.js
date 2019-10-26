@@ -31,6 +31,3 @@ for (let i=1; i<6; i++){
     document.getElementById("temp-"+ i).innerHTML = Math.ceil(forecastObject.list[i].main.temp) + '&deg;F';
 }
 
-// https://tile.openweathermap.org/map/temp_new/190.14/43.5667/-116.2410.png?appid=9479da382fe4e6454b2b21f3e81c03d7
-
-//https://weather.api.here.com/weather/1.0/report.xml?app_id=n4BB2dFEjCniatJtSnoG&app_code=cphQnNWEkkaVce1m6fotKA&product=observation&name=Idaho

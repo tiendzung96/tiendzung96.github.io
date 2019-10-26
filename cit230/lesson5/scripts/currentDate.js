@@ -6,7 +6,6 @@ let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 document.getElementById("currentYear").innerHTML = days[currentDate.getDay()] + ", " + months[currentDate.getMonth()]+ " " + currentDate.getDate() + ", " + currentYear;
 
 // PANCAKE BANNER
-console.log(days[currentDate.getDay()]);
 
 if (days[currentDate.getDay()] === "Friday"){
     document.getElementById("pancakes").classList.remove("hidden");

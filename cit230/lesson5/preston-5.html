@@ -70,10 +70,7 @@
                     </tr>
                 </table>
             </section>
-            <section id="digital-clock-container">
-                <h2>Current Time</h2>
-                <article id = digital-clock></article>
-            </section>
+        
             <section id ="news">
                     <h2>ARTICLE: Founder's Day Parade</h2>
                     <article>
@@ -83,6 +80,32 @@
                             <p>The Annual Founder’s Day Parade will be held on Main Street. Be ready to bring out your best float decorating skills, because there will be a prize for Best Use of Theme, Most Entertaining, or the Most Original. Or if you’d like come watch the parade, and enjoy all that Preston has to offer.</p>
                         </div>
                     </article>
+            </section>
+
+            <section id ="temp-map">
+                    <h2>U. S. Temperature Map</h2>
+                    <div id="weather-map"></div>
+            </section>
+
+            <section id ="todolist-container">
+                <h2>Things To Do In Preston</h2>
+                <article>
+                    <div id="todo-info">
+                        <p>**Check the boxes below to get a new suggestion.</p>
+                        <h3>HAVE YOU VISIT...</h3>
+                        <form id="todo-list">
+                            <div id="list-1"><input type="checkbox" id="list-1-box"> Oneida Narrows Campground?
+                            </div>
+                            <div id="list-2"></div>
+                            <div id="list-3"></div>
+                            <div id="list-4"></div>
+                            <div id="prompt-local"></div>
+                        </form>
+                    </div>
+                    <div id="todo-img">
+                        <img src="images/preston-attractions/oneida-narrows.jpg">
+                    </div>
+                </article>
             </section>
             <section id ="contact">
                     <h2>Contact Us</h2>
@@ -107,6 +130,7 @@
     <footer>
         <p>&copy; Super Accurate Weather | Attributions | Douglas Phan</p>
         <p><span id="currentYear"></span></p>
+        <article id = digital-clock></article>
     </footer>
     <!-- TEST FILES -->
     <script src="scripts/testforecast.js"></script>
@@ -118,6 +142,8 @@
     <script src="scripts/forecast.js"></script>
     <script src="scripts/liveCoverImage.js"></script>
     <script src="scripts/weatherData.js"></script>
+    <script src="scripts/tempMap.js"></script>
+    <script src="scripts/todoListGenerate.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="scripts/fonts.js"></script>
 

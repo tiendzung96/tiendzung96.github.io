@@ -181,8 +181,58 @@ main a:visited{
 }
 
 #digital-clock{
-    font-size: 3em;
-    padding: 15pt;
+    font-size: 2em;
+    margin: 0 0 10 0;
+}
+
+
+#weather-map{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 4px #353535 solid;
+    background-image: url("/cit230/lesson5/images/weather-map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#weather-map img{
+    width: 100%;
+}
+
+
+
+#todo-list{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+#todo-list a:hover{
+    color: rgb(0, 157, 230);
+}
+
+
+#todo-img img{
+    width: 100%;
+}
+#todo-info p{
+   font-size: .8em;
+   margin: 0;
+}
+
+#todo-info h3{
+    padding: 3pt 0pt;
+    display: inline-block;
+    letter-spacing: 2pt;
+    font-weight: 700;;
+}
+#todo-info h4{
+    margin-top:5pt;
+}
+
+.crossed-out{
+    color: rgb(177, 177, 177);
+    text-decoration: line-through;
+    font-weight: 400;
 }
 
 .section-container section{
