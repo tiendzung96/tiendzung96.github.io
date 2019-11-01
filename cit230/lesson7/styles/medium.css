@@ -46,6 +46,8 @@
         margin-top: 0px;
     }
 
+
+
 }
 
 @media only screen and (min-width: 55em){
@@ -106,3 +108,14 @@
     }
 
 }
+
+
+
+@media only screen and (min-width: 600px){
+
+    #gallery-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+

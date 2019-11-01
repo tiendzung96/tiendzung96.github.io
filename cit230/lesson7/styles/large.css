@@ -57,3 +57,21 @@
         }
  
  }
+
+ /* GALLERY PAGE */
+
+ @media only screen and (min-width: 900px){
+
+    #gallery-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+
+    #gallery-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
