@@ -1,10 +1,10 @@
-// const weatherURL = 'http://api.openweathermap.org/data/2.5/weather?zip=83263,us&units=imperial&appid=9479da382fe4e6454b2b21f3e81c03d7';
-// fetch(weatherURL)
-//   .then((response) => response.json())
-//   .then((weatherObject) => {
-//     console.log(weatherObject);
+const weatherURL = 'http://api.openweathermap.org/data/2.5/weather?zip=83263,us&units=imperial&appid=9479da382fe4e6454b2b21f3e81c03d7';
+fetch(weatherURL)
+  .then((response) => response.json())
+  .then((weatherObject) => {
+    console.log(weatherObject);
 
-
+//TESTING
     let weather = {};
 
     weather.currentWeather = weatherObject.weather[0].main;
@@ -42,4 +42,4 @@
     document.getElementById('wind-chill').innerHTML = '<b>Wind Chill:</b> ' + weather.windChill;
     document.getElementById('wind-speed').innerHTML = '<b>Wind Speed:</b> ' + weather.windSpeed + ' mph';
 
-// });
+});
