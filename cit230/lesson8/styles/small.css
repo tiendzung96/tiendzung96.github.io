@@ -17,6 +17,10 @@
     display: none;
 }
 
+.active-page{
+    font-weight: 700;
+}
+
 body{
     min-width: 300px;
     background-image: url("/cit230/lesson7/images/preston-background.jpg");
@@ -389,23 +393,11 @@ main a:visited{
     bottom: 4px;
 }
 
-/*-------- Body Background Video --------*/
-video#bgvid {
-    width: 100%; height: auto; position: relative;
-    z-index: -1;
+/*-----------------STORM CENTER------------------ */
+#storm-center form{
+    margin: 20px;
 }
 
-
-@media (min-aspect-ratio: 16/9) {
-    #bgvid {
-      width: 100%;
-      height: auto;
-    }
-  }
-  
-  @media (max-aspect-ratio: 16/9) {
-    #bgvid {
-      width: auto;
-      height: 100%;
-    }
-  }
+#storm-center form div{
+    margin: 10px;
+}

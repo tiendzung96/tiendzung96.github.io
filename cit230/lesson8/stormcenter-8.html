@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="images/weather-site-icon.png">
+        <title>Gallery | Super Accurate Weather</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+    <body id="storm-center">
+        <div id='pancakes' class = 'hidden'><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div>
+
+        <header>
+            <img class="black-logo" src="images/weather-sitelogo.png">
+            <img class="white-logo" src="images/weather-sitelogo-white.png">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-8.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter-8.html" class="active-page">Storm Center</a></li>
+                    <li><a href="gallery-8.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main >
+            <form action="thanks.html" method="GET">
+                <div>
+                    <label for="fullName">Full Name:* </label>
+                    <input type="text" id="fullName" name="fullName" required >
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="user@email.com" >
+                </div>
+                <div>
+                    <label for="phone">Phone:* </label>
+                    <input type="tel" id="phone" name="phone" required >
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code: </label>
+                    <input type="number" id="zipCode" name="zipCode" required >
+                </div>
+                <div>
+                    <label for="stormDate">Storm Date: </label>
+                    <input type="date" id="stormDate" name="stormDate">
+                </div>
+                <div>
+                    <label for="stormType">Storm Type: </label>
+                    <input list="stormType">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </div>
+
+            </form>
+        </main>
+        <footer>
+            <p>&copy; Super Accurate Weather | Attributions | Douglas Phan</p>
+            <p><span id="currentYear"></span></p>
+            <article id = digital-clock></article>
+        </footer>
+        <!-- NORMAL SCRIPT FILES -->
+        <script src="scripts/toggleMenu.js"></script>
+        <script src="scripts/currentDate.js"></script>
+        <script src="scripts/currentTime.js"></script>
+
+        <script src="scripts/lazy-load.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="scripts/fonts.js"></script>
+    </body>
+</html>
