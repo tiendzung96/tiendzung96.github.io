@@ -12,7 +12,7 @@ table, tr, th, td{
 table{
     /* -moz-box-shadow: 5px 5px 5px #ccc; 
     -webkit-box-shadow: 5px 5px 5px #ccc;  */
-    box-shadow: 5px 5px 5px #ccc; 
+    box-shadow: 5px 5px 5px #628ca6 ; 
 }
 
 thead th{
