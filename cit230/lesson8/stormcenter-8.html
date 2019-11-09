@@ -30,10 +30,12 @@
             </nav>
         </header>
         <main >
+            <h1>Report a Storm!</h1>
             <form action="thanks.html" method="GET">
+                <p>* are required fields.</p>
                 <div>
                     <label for="fullName">Full Name:* </label>
-                    <input type="text" id="fullName" name="fullName" required >
+                    <input type="text" id="fullName" name="fullName" required pattern ="[A-Za-z ]{5,}">
                 </div>
                 <div>
                     <label for="email">Email: </label>
@@ -44,7 +46,7 @@
                     <input type="tel" id="phone" name="phone" required >
                 </div>
                 <div>
-                    <label for="zipCode">Zip Code: </label>
+                    <label for="zipCode">Zip Code:* </label>
                     <input type="number" id="zipCode" name="zipCode" required >
                 </div>
                 <div>
@@ -62,8 +64,41 @@
                         <option value="Tornado">
                     </datalist>
                 </div>
-
+                <div>
+                    <label for="stormSeverity">Storm Severity: <strong id="ratingvalue">5</strong></label>
+                    <input type="range" id="stormSeverity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+				    
+                </div>
+                <div>
+                    <label for="stormRegion">Storm Region: </label>
+                    <select name="stormRegion" id="stormRegion">
+                        <option selected disabled>Select Region ...</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Sugar City">Sugar City</option>
+                    </select>                    
+                </div>
+                <div>
+                    <label for="danger">Are you in danger?</label>
+                    <input name="danger" type="radio" id="yes" value="Yes"><label for="yes" class="radio-button"> Yes</label>
+                    <input name="danger" type="radio" id="no" value="No"><label for="no" class="radio-button"> No</label>
+                    <input name="danger" type="radio" id="maybe" value="Maybe"><label for="maybe" class="radio-button"> Maybe</label>
+                </div>
+                <div>
+                    <label for="comments">Comments:</label>
+                    <textarea rows="4" cols="30">
+                    </textarea>                
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
             </form>
+            <div>
+                <video autoplay muted loop id="myVideo">
+                    <source src="images/storm-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            
         </main>
         <footer>
             <p>&copy; Super Accurate Weather | Attributions | Douglas Phan</p>
@@ -71,6 +106,7 @@
             <article id = digital-clock></article>
         </footer>
         <!-- NORMAL SCRIPT FILES -->
+        <script src="scripts/form.js"></script>
         <script src="scripts/toggleMenu.js"></script>
         <script src="scripts/currentDate.js"></script>
         <script src="scripts/currentTime.js"></script>
