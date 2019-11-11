@@ -7,9 +7,9 @@
 
 }
 body{
-    background-image: url('first-vision.jpg');
+    background-image: url('/cit230/lesson9/images/first-vision.jpg');
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     background-attachment: fixed;
     margin: 0;
 }
