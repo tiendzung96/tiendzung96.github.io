@@ -134,6 +134,13 @@ footer p{
 #home main{
     max-width: 1200px;
     margin: 20px auto;
+    text-align: center;
+}
+
+#home h1{
+    font-size: 3em;
+    margin: auto;
+    padding: 10px 40px;
 }
 
 .town-data{
@@ -148,7 +155,7 @@ footer p{
     border-radius: 5pt;
     margin: 20px auto;
     box-shadow: 0pt 0pt 20pt rgba(0, 0, 0, 0.3);
-    text-align: center;
+
     transition: .3s ease-in-out;
     cursor: pointer;
 
@@ -165,13 +172,13 @@ footer p{
     border-radius: 5pt 5pt 0 0;
 }
 
-.town-data h1{
+.town-data h2{
     font-size: 2.8em;
     font-weight: 200;
     margin-bottom: 0;
 }
 
-.town-data h2{
+.town-data h3{
     font-size: 1em;
     height: 2em;
     font-weight: 700;
@@ -190,7 +197,7 @@ footer p{
     padding: 10px 30px;
 }
 
-.town-data h3{
+.town-data h4{
     font-size: .7em;
     letter-spacing: 1pt;
     font-weight: 700;
