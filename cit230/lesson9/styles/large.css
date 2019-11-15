@@ -55,8 +55,20 @@
         letter-spacing: 3pt !important;
         color: black !important;
         }
+
+  
+    
  
  }
+ /* HOME PAGE */
+ @media only screen and (min-width: 1250px){
+
+    .town-data{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+ }
+
 
  /* GALLERY PAGE */
 
@@ -79,10 +91,10 @@
     }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1000px){
 
     #gallery-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }

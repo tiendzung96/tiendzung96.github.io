@@ -116,6 +116,87 @@ footer{
 footer p{
     margin:5px;
 }
+
+
+/*-----------------HOME PAGE------------------ */
+
+#home main{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.town-data{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px auto;
+}
+
+.town-data figure{
+    background-color: rgb(248, 248, 248);
+    width: 350px;
+    border-radius: 5pt;
+    margin: 20px auto;
+    box-shadow: 0pt 0pt 20pt rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: .3s ease-in-out;
+
+}
+
+.town-data figure:hover{
+    transform: scale(1.08);
+    transition: .3s ease-in-out;
+}
+
+
+.town-data img{
+    width: 100%;
+    border-radius: 5pt 5pt 0 0;
+}
+
+.town-data h1{
+    font-size: 2.8em;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.town-data h2{
+    font-size: 1em;
+    height: 2em;
+    font-weight: 700;
+    margin-top: 5pt;
+    font-style: italic;
+    color: rgb(37, 37, 37);
+    padding: 0 50px;
+}
+
+.town-data figcaption{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 10px 30px;
+}
+
+.town-data h3{
+    font-size: .7em;
+    letter-spacing: 1pt;
+    font-weight: 700;
+    margin-top: 5pt;
+    text-transform: uppercase;
+    height: 1.6em;
+    vertical-align: middle;
+    color: rgb(121, 121, 121);
+
+}
+
+.town-data p{
+    font-size: 2em;
+    font-weight: 200;
+    margin-top: 0;
+    color: rgb(58, 58, 58);
+}
+
 /*-----------------PRESTON PAGE------------------ */
 
 #preston main{

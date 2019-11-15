@@ -117,5 +117,14 @@
         grid-template-columns: 1fr 1fr;
     }
 
+
 }
 
+ /* HOME PAGE */
+ @media only screen and (min-width: 750px){
+
+    .town-data{
+        grid-template-columns: 1fr 1fr;
+    }
+
+ }

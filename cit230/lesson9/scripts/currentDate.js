@@ -7,6 +7,6 @@ document.getElementById("currentYear").innerHTML = days[currentDate.getDay()] + 
 
 // PANCAKE BANNER
 
-if (days[currentDate.getDay()] === "Friday"){
-    document.getElementById("pancakes").classList.remove("hidden");
-}
+// if (days[currentDate.getDay()] === "Friday"){
+//     document.getElementById("pancakes").classList.remove("hidden");
+// }
