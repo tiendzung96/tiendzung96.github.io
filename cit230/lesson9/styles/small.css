@@ -139,6 +139,7 @@ footer p{
     box-shadow: 0pt 0pt 20pt rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: .3s ease-in-out;
+    cursor: pointer;
 
 }
 
