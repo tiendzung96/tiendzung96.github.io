@@ -11,11 +11,11 @@
 
     header nav{
         background-color: #353535;
-        padding: 1px;
+        padding: 0px;
     }
 
     header nav a{
-        display: inline;    
+        display: inline-block;    
         border-top: none;    
     }
 
