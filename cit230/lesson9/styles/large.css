@@ -29,11 +29,6 @@
         display: inherit;
     }
 
-    header nav{
-        margin-top: 1.5em;
-        margin-left: 1.5em;
-        
-    }
 
     header li{
         display: inline !important;
@@ -44,10 +39,11 @@
     }
 
     header nav a{
-        display: inline;
+        display: inline-block;
         border-top: none;
         font-size: .8em;
         font-weight: 400;
+        padding: 25px 20px;
     }
 
     nav a:hover{
