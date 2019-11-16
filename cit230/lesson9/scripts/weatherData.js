@@ -42,4 +42,4 @@
     document.getElementById('wind-chill').innerHTML = '<b>Wind Chill:</b> ' + weather.windChill;
     document.getElementById('wind-speed').innerHTML = '<b>Wind Speed:</b> ' + weather.windSpeed + ' mph';
 
-});
+// });
