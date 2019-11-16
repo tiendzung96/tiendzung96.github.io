@@ -30,6 +30,25 @@ fetch(townURL)
                 document.querySelector('#'+townName+'Population').textContent = town.currentPopulation;
                 document.querySelector('#'+townName+'Rain').textContent = town.averageRainfall;
             }
+
+            dataCounter();
           }
       )
   });
+
+  // DATA COUNTER
+function dataCounter(){
+    $('.counter').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 2000,
+            easing: 'swing',
+
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+}
+ 
