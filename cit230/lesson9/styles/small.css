@@ -205,15 +205,15 @@ footer p{
     text-transform: uppercase;
     height: 1.6em;
     vertical-align: middle;
-    color: rgb(121, 121, 121);
+    color: rgb(160, 160, 160);
 
 }
 
 .town-data p{
     font-size: 2em;
-    font-weight: 200;
+    font-weight: 300;
     margin-top: 0;
-    color: rgb(58, 58, 58);
+    color: rgb(105, 105, 105);
 }
 
 /*-----------------PRESTON PAGE------------------ */
