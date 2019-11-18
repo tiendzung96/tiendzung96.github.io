@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="images/weather-site-icon.png">
+        <title>Home | Super Accurate Weather</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+    <body id="home">
+
+        <header>
+            <img class="black-logo" src="images/weather-sitelogo.png">
+            <img class="white-logo" src="images/weather-sitelogo-white.png">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html"  class="active-page">Home</a></li>
+                    <li><a href="preston-10.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter-10.html">Storm Center</a></li>
+                    <li><a href="gallery-10.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>
+                Welcome to Super Accurate Weather!
+            </h1>
+            <section class="town-data">
+                <figure>
+                    <img id = "fishHavenImg">
+                        <h2>
+                            Fish Haven
+                        </h2>
+                        <h3 id="fishHavenMotto"></h3>
+                        <figcaption>
+
+                        <div>
+                            <h4>Year</br>Founded</h4>
+                            <p id="fishHavenYear"></p>
+                        </div>
+                        <div>
+                            <h4>Current</br>Population</h4>
+                            <p id="fishHavenPopulation" class ="counter"></p>
+                        </div>
+                        <div>
+                            <h4>Annual</br>Rain Fall</h4>
+                            <p id="fishHavenRain"></p>
+                        </div>
+                    </figcaption>
+                  
+                </figure>
+
+                <figure>
+                    <img id = "prestonImg">
+                        <h2>
+                            Preston
+                        </h2>
+                        <h3 id="prestonMotto"></h3>
+                        <figcaption>
+
+                        <div>
+                            <h4>Year</br>Founded</h4>
+                            <p id="prestonYear"></p>
+                        </div>
+                        <div>
+                            <h4>Current</br>Population</h4>
+                            <p id="prestonPopulation" class ="counter"></p>
+                        </div>
+                        <div>
+                            <h4>Annual</br>Rain Fall</h4>
+                            <p id="prestonRain"></p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img id = "sodaSpringsImg">
+                    
+                    <h2>
+                        Soda Springs
+                    </h2>
+                    <h3 id="sodaSpringsMotto"></h3>
+                    <figcaption>
+                    <div>
+                        <h4>Year</br>Founded</h4>
+                        <p id="sodaSpringsYear"></p>
+                    </div>
+                    <div>
+                        <h4>Current</br>Population</h4>
+                        <p id="sodaSpringsPopulation" class ="counter"></p>
+                    </div>
+                    <div>
+                        <h4>Annual</br>Rain Fall</h4>
+                        <p id="sodaSpringsRain" ></p>
+                    </div>
+                 </figcaption>
+                </figure>
+                
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Super Accurate Weather | Attributions | Douglas Phan</p>
+            <p><span id="currentYear"></span></p>
+            <article id = digital-clock></article>
+        </footer>
+        <!-- NORMAL SCRIPT FILES -->
+        <script src="scripts/toggleMenu.js"></script>
+        <script src="scripts/currentDate.js"></script>
+        <script src="scripts/currentTime.js"></script>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="scripts/town-data.js"></script>
+
+
+        <script src="scripts/lazy-load.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="scripts/fonts.js"></script>
+
+
+    </body>
+</html>
