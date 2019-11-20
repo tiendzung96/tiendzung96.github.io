@@ -29,5 +29,14 @@ showCurrentDate();
 // TEST ***********************************************
 for (let i=1; i<6; i++){
     document.getElementById("temp-"+ i).innerHTML = Math.ceil(forecastObject.list[i].main.temp) + '&deg;F';
+
+    
+    const imagesrc = 'images/weather-icon/' +forecastObject.list[i].weather[0].icon + '.png';  
+    const desc = forecastObject.list[i].weather[0].description;  
+    
+
+    document.getElementById('forecast-icon-' + i).setAttribute('src', imagesrc); 
+
+    document.getElementById('forecast-icon-' + i).setAttribute('alt', desc);
 }
 

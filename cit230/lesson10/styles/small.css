@@ -298,6 +298,10 @@ main a:visited{
     display: none;
 }
 
+.forecast5 img{
+    width: 30px;
+}
+
 #digital-clock{
     font-size: 2em;
     margin: 0 0 10 0;
