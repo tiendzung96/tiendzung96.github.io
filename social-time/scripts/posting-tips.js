@@ -1,151 +1,158 @@
-const postingTipsURL = 'https://raw.githubusercontent.com/tiendzung96/java-script/master/engagement-time-object-nov2019.json';
+const tipsURL = 'https://raw.githubusercontent.com/tiendzung96/tiendzung96.github.io/master/social-time/social-media-posting-tips-11-2019.json';
 
-fetch(engagementURL)
-.then((response) => response.json())
-.then((engagementObject) => {
-// console.log(engagementObject);
-
+fetch(tipsURL)
+.then((responseTips) => responseTips.json())
+.then((tipsObject) => {
+console.log(tipsObject);
+    
     //DATA CONTROLLER
-    const DataController =(function(){
+    // const DataController =(function(){
            
-        return{
-            getDay: function(){
-                var opt, sel;
-                sel = document.getElementById('weekDay');
-                for ( var i = 0; i < sel.options.length; i++ ) {
-                    opt = sel.options[i];
-                    if (opt.selected) {
-                        break;
-                    }
-                }
-                return opt.value;
+    //     return{
+    //         getDay: function(){
+    //             var opt, sel;
+    //             sel = document.getElementById('weekDay');
+    //             for ( var i = 0; i < sel.options.length; i++ ) {
+    //                 opt = sel.options[i];
+    //                 if (opt.selected) {
+    //                     break;
+    //                 }
+    //             }
+    //             return opt.value;
                 
-            },
-            getSocialMedia: function(){
-                let value, form, name;
-                // get list of radio buttons with specified name
-                form = document.getElementById('form');
-                name = 'social-media';
-                var radios = form.elements[name];
+    //         },
+    //         getSocialMedia: function(){
+    //             let value, form, name;
+    //             // get list of radio buttons with specified name
+    //             form = document.getElementById('form');
+    //             name = 'social-media';
+    //             var radios = form.elements[name];
                 
-                // loop through list of radio buttons
-                for (var i=0, len=radios.length; i<len; i++) {
-                    if ( radios[i].checked ) { // radio checked?
-                        value = radios[i].value; // if so, hold its value in value
-                        break; // and break out of for loop
-                    }
-                }
-                return value; // return value of checked radio or undefined if none checked
-            },
-            getEngagementValue: function(){
-                return document.querySelector(DOMstrings.engagementLvl).value;   
-            },
+    //             // loop through list of radio buttons
+    //             for (var i=0, len=radios.length; i<len; i++) {
+    //                 if ( radios[i].checked ) { // radio checked?
+    //                     value = radios[i].value; // if so, hold its value in value
+    //                     break; // and break out of for loop
+    //                 }
+    //             }
+    //             return value; // return value of checked radio or undefined if none checked
+    //         },
+    //         getEngagementValue: function(){
+    //             return document.querySelector(DOMstrings.engagementLvl).value;   
+    //         },
 
-            getPostingTime: function(weekDay, socialMedia, engagementLvl){
-                let weekDayInt = parseInt(weekDay);
-                // console.log(engagementObject);
-                function getSocialMediaObject(socMedia){
-                   return engagementObject.find(element => element.socialmedia === socMedia); 
-                }
+    //         getPostingTime: function(weekDay, socialMedia, engagementLvl){
+    //             let weekDayInt = parseInt(weekDay);
+    //             // console.log(engagementObject);
+    //             function getSocialMediaObject(socMedia){
+    //                return engagementObject.find(element => element.socialmedia === socMedia); 
+    //             }
 
-                let socialMediaObject = getSocialMediaObject(socialMedia);
-                // console.log(socialMediaObject);
-                let engagementGroupObj = socialMediaObject.engagement[engagementLvl].time;
+    //             let socialMediaObject = getSocialMediaObject(socialMedia);
+    //             // console.log(socialMediaObject);
+    //             let engagementGroupObj = socialMediaObject.engagement[engagementLvl].time;
 
-                function getTimeInWeekDay(wkDay){
-                    return engagementGroupObj.filter(element => element.weekday === wkDay); 
-                }
+    //             function getTimeInWeekDay(wkDay){
+    //                 return engagementGroupObj.filter(element => element.weekday === wkDay); 
+    //             }
 
-                return getTimeInWeekDay(weekDayInt);
+    //             return getTimeInWeekDay(weekDayInt);
 
-            }
-        }
+    //         }
+    //     }
 
-    })();
+    // })();
     
-    //UI CONTROLLER
-    const UIController = (function(){
-        let convertFromMilitaryHour = function(hour){
-            if (hour > 12 ){
-                newHour = hour - 12 + 'pm';
-            } else if (hour < 12 && hour !== 0){
-                newHour = hour + 'am';
-            } else {
-                newHour = 12 + 'am';
-            }
-            return newHour;
-        }
+    // //UI CONTROLLER
+    // const UIController = (function(){
+    //     let convertFromMilitaryHour = function(hour){
+    //         if (hour > 12 ){
+    //             newHour = hour - 12 + 'pm';
+    //         } else if (hour < 12 && hour !== 0){
+    //             newHour = hour + 'am';
+    //         } else {
+    //             newHour = 12 + 'am';
+    //         }
+    //         return newHour;
+    //     }
 
-        return{
-            displayPostingTime: function(arr, socMedia){
-                let heading, section, element, weekDayStrings, newStartHour, newEndHour, socialMediaPlatform, engagementLevel;
-                element = DOMstrings.engagementContainer;
+    //     return{
+    //         displayPostingTime: function(arr, socMedia){
+    //             let heading, section, element, weekDayStrings, newStartHour, newEndHour, socialMediaPlatform, engagementLevel;
+    //             element = DOMstrings.engagementContainer;
 
-                dayInput = document.querySelector('#weekDay');
-                weekDayStrings = dayInput.options[dayInput.selectedIndex].text;
-                // console.log (weekDayStrings);
+    //             dayInput = document.querySelector('#weekDay');
+    //             weekDayStrings = dayInput.options[dayInput.selectedIndex].text;
+    //             // console.log (weekDayStrings);
 
-                engagementLevel = document.getElementById('engagement-level-value').textContent;
+    //             engagementLevel = document.getElementById('engagement-level-value').textContent;
 
-                socialMediaPlatform = socMedia.slice(0,1).toLocaleUpperCase() + socMedia.slice(1);
+    //             socialMediaPlatform = socMedia.slice(0,1).toLocaleUpperCase() + socMedia.slice(1);
 
-                heading = '<h2>' + weekDayStrings + '\'s Posting Time</h2><p>with ' + engagementLevel + ' Engagement on ' + socialMediaPlatform + '</p><div>';
+    //             heading = '<h2>' + weekDayStrings + '\'s Posting Time</h2><p>with ' + engagementLevel + ' Engagement on ' + socialMediaPlatform + '</p>';
 
-                section = '';
+    //             section = '';
 
-                if (arr.length === 0){
-                    section += '<div><section class = "engagement-time"><p class = "no-time">There\'s no posting time today with this level of engagement.</p></section>';
-                } else{
-                    for (i = 0; i < arr.length; i++){
-                        // console.log(arr[i]);
+    //             if (arr.length === 0){
+    //                 section += '<div><section class = "engagement-time"><p class = "no-time">There\'s no posting time today with this level of engagement.</p></section>';
+    //             } else{
+    //                 for (i = 0; i < arr.length; i++){
+    //                     // console.log(arr[i]);
     
-                        newStartHour= convertFromMilitaryHour(arr[i].starthour);
-                        newEndHour= convertFromMilitaryHour(arr[i].endhour);
+    //                     newStartHour= convertFromMilitaryHour(arr[i].starthour);
+    //                     newEndHour= convertFromMilitaryHour(arr[i].endhour);
     
-                        // console.log(newStartHour, newEndHour);
+    //                     // console.log(newStartHour, newEndHour);
     
-                        section += '<div><section class = "engagement-time"><p class = "time-of-day">'+ newStartHour + ' - ' + newEndHour + '</p></section>';
+    //                     section += '<section class = "engagement-time"><p class = "time-of-day">'+ newStartHour + ' - ' + newEndHour + '</p></section>';
            
-                    }
-                }
+    //                 }
+    //             }
 
                 
 
-                document.querySelector(element).innerHTML = heading + section + '</div>';
+    //             document.querySelector(element).innerHTML = heading + section + '</div>';
            
-            }
+    //         }
             
-        }
+    //     }
 
-    })();
+    // })();
 
 
-    //GLOBAL APP CONTROLLER
+    // GLOBAL APP CONTROLLER
     const controller = (function(UICtrl, DataCtrl){
 
-        const toggleButton = function(){
-            document.querySelector(DOMstrings.inputBtn).classList.remove('hidden');
+    //     const toggleButton = function(){
+    //         document.querySelector(DOMstrings.inputBtn).classList.remove('hidden');
 
-        }
+    //     }
         
-        const outputData = function(){
-            let weekDay, socialMedia, engagementLvl, postingTimeObj;
-            weekDay = DataCtrl.getDay();
-            socialMedia = DataCtrl.getSocialMedia();
-            engagementLvl = DataCtrl.getEngagementValue();
-            // console.log(weekDay, socialMedia, engagementLvl);
+    //     const outputData = function(){
+    //         // Unhide the engagement value div
+    //         document.querySelector(DOMstrings.engagementContainer, DOMstrings.postingContainer, DOMstrings.referenceContainer).classList.remove('hidden');
+    //         document.querySelector(DOMstrings.postingContainer).classList.remove('hidden');
+    //         document.querySelector(DOMstrings.referenceContainer).classList.remove('hidden');
+        
 
-            postingTimeObj = DataCtrl.getPostingTime(weekDay, socialMedia, engagementLvl);
-            // console.log(postingTimeObj);
-            UICtrl.displayPostingTime(postingTimeObj, socialMedia, engagementLevel);
-        }
+    //         let weekDay, socialMedia, engagementLvl, postingTimeObj;
+    //         weekDay = DataCtrl.getDay();
+    //         socialMedia = DataCtrl.getSocialMedia();
+    //         engagementLvl = DataCtrl.getEngagementValue();
+    //         // console.log(weekDay, socialMedia, engagementLvl);
 
-        const setupEventListeners = function(){
-            document.querySelector(DOMstrings.socialMediaInput).addEventListener('change', toggleButton)
-            document.querySelector(DOMstrings.inputBtn).addEventListener('click', outputData);
-            document.querySelector(DOMstrings.inputBtn).addEventListener('click', outputData);
+    //         postingTimeObj = DataCtrl.getPostingTime(weekDay, socialMedia, engagementLvl);
+    //         // console.log(postingTimeObj);
+    //         UICtrl.displayPostingTime(postingTimeObj, socialMedia, engagementLevel);
 
-        };
+    //     }
+
+    //     const setupEventListeners = function(){
+    //         document.querySelector(DOMstrings.socialMediaInput).addEventListener('change', toggleButton)
+    //         document.querySelector(DOMstrings.inputBtn).addEventListener('click', outputData);
+    //         document.querySelector(DOMstrings.inputBtn).addEventListener('click', outputData);
+
+    //     };
         
         return{
             init: function(){
@@ -158,8 +165,6 @@ fetch(engagementURL)
     })(UIController, DataController);
 
     controller.init();
-
-
 
 }); 
 

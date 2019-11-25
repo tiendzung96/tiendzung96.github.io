@@ -176,7 +176,5 @@ fetch(engagementURL)
 
     controller.init();
 
-
-
 }); 
 
