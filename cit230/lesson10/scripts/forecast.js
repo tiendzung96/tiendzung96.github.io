@@ -15,16 +15,16 @@ showCurrentDate();
 
 /* GET TEMP */
 
-// const forecastURL = 'http://api.openweathermap.org/data/2.5/forecast?zip=83263,us&units=imperial&appid=9479da382fe4e6454b2b21f3e81c03d7';
-// fetch(forecastURL)
-//   .then((responseF) => responseF.json())
-//   .then((forecastObject) => {
-//     // console.log(forecastObject);
+const forecastURL = 'http://api.openweathermap.org/data/2.5/forecast?zip=83263,us&units=imperial&appid=9479da382fe4e6454b2b21f3e81c03d7';
+fetch(forecastURL)
+  .then((responseF) => responseF.json())
+  .then((forecastObject) => {
+    // console.log(forecastObject);
     
-//     for (let i=1; i<6; i++){
-//         document.getElementById("temp-"+ i).innerHTML = Math.ceil(forecastObject.list[i].main.temp) + '&deg;F';
-//     }
-// });
+    for (let i=1; i<6; i++){
+        document.getElementById("temp-"+ i).innerHTML = Math.ceil(forecastObject.list[i].main.temp) + '&deg;F';
+    }
+
 
 // TEST ***********************************************
 for (let i=1; i<6; i++){
@@ -40,3 +40,4 @@ for (let i=1; i<6; i++){
     document.getElementById('forecast-icon-' + i).setAttribute('alt', desc);
 }
 
+});
