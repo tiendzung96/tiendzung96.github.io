@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/small.css">
+    <title>Social Time</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Social Time
+        </h1>
+    </header>
+    <main>
+        <form id = "form" class = "input-container container">
+            <div>
+                <span>Day of the Week</span>
+                
+                <select name="weekDay" id="weekDay">
+                    <option value="1" selected>Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                    <option value="0">Sunday</option>
+                </select> 
+            </div>
+            <div>
+                <p>Social Media Platform</p>
+                <div class="radio-group">
+                        <input type="radio" id="facebook" name="social-media" value = "facebook"><label for="facebook">Facebook</label><input type="radio" id="option-two" name="social-media" value = "instagram"><label for="option-two">Instagram</label><input type="radio" id="option-three" name="social-media" value = "twitter"><label for="option-three">Twitter</label>
+                </div>
+            </div>
+            <div>
+                <p>Engagement Level</p>
+                <strong id="engagement-level-value">0 - 25%</strong>
+                <input type="range" id="engagementLevel" value="0" min="0" max="3" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            </div>
+            <div>
+                <button type="button" class= "inputBtn hidden">Submit</button>
+            </div>
+        </form>
+        <div class = "engagement-time-container container">
+            <!-- <h2>Monday's Posting Time</h2>
+            <p>with 0 - 25% Engagement on Facebook</p>
+            <div>
+                <section class = "engagement-time">
+                    <p class = "time-of-day">12pm-10pm</p>
+                </section>
+                <section class = "engagement-time">
+                    <p class = "time-of-day">4pm-7pm</p>
+                </section>
+                <section class = "engagement-time">
+                    <p class = "time-of-day">5pm-8pm</p>
+                </section>
+            </div>  -->
+        </div>
+        <div class = "posting-tips-container container">
+            <h2>Posting Tips</h2>
+                <p>While people frequently check in throughout the middle of the day to see what’s going on, the peak times are around lunch breaks. When people have more time to scroll through their Facebook feeds and dig into interesting posts, engagement rises correspondingly.</p>
+            </section>
+        </div>
+    </main>
+    
+    <script src="scripts/form.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+</body>
+</html>
