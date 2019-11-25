@@ -3,6 +3,8 @@ const DOMstrings = {
     engagementLvl: '#engagementLevel',
     inputBtn: '.inputBtn',
     engagementContainer: '.engagement-time-container',
+    postingContainer: '.posting-tips-container',
+    referenceContainer: '.reference-container',
     socialMediaInput: '.radio-group'
 };
 
@@ -97,7 +99,7 @@ fetch(engagementURL)
 
                 socialMediaPlatform = socMedia.slice(0,1).toLocaleUpperCase() + socMedia.slice(1);
 
-                heading = '<h2>' + weekDayStrings + '\'s Posting Time</h2><p>with ' + engagementLevel + ' Engagement on ' + socialMediaPlatform + '</p><div>';
+                heading = '<h2>' + weekDayStrings + '\'s Posting Time</h2><p>with ' + engagementLevel + ' Engagement on ' + socialMediaPlatform + '</p>';
 
                 section = '';
 
@@ -112,7 +114,7 @@ fetch(engagementURL)
     
                         // console.log(newStartHour, newEndHour);
     
-                        section += '<div><section class = "engagement-time"><p class = "time-of-day">'+ newStartHour + ' - ' + newEndHour + '</p></section>';
+                        section += '<section class = "engagement-time"><p class = "time-of-day">'+ newStartHour + ' - ' + newEndHour + '</p></section>';
            
                     }
                 }
@@ -137,6 +139,12 @@ fetch(engagementURL)
         }
         
         const outputData = function(){
+            // Unhide the engagement value div
+            document.querySelector(DOMstrings.engagementContainer, DOMstrings.postingContainer, DOMstrings.referenceContainer).classList.remove('hidden');
+            document.querySelector(DOMstrings.postingContainer).classList.remove('hidden');
+            document.querySelector(DOMstrings.referenceContainer).classList.remove('hidden');
+        
+
             let weekDay, socialMedia, engagementLvl, postingTimeObj;
             weekDay = DataCtrl.getDay();
             socialMedia = DataCtrl.getSocialMedia();
@@ -146,6 +154,7 @@ fetch(engagementURL)
             postingTimeObj = DataCtrl.getPostingTime(weekDay, socialMedia, engagementLvl);
             // console.log(postingTimeObj);
             UICtrl.displayPostingTime(postingTimeObj, socialMedia, engagementLevel);
+
         }
 
         const setupEventListeners = function(){
