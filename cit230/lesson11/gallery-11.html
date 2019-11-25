@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="images/weather-site-icon.png">
+        <title>Gallery | Super Accurate Weather</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+    <body id="gallery">
+
+        <header>
+            <img class="black-logo" src="images/weather-sitelogo.png">
+            <img class="white-logo" src="images/weather-sitelogo-white.png">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston-11.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter-11.html">Storm Center</a></li>
+                    <li><a href="gallery-11.html" class="active-page">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+                <div id="weather-gallery-title"> 
+                    <h1>Weather Gallery</h1>
+                </div>
+            <section id ="gallery-container">
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-1.jpg" alt="weather-image-1">
+                    <figcaption>Sunrise on the Hill</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-2.jpg" alt="weather-image-2">
+                    <figcaption>Sunset by Collington Farm</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-3.jpg" alt="weather-image-3">
+                    <figcaption>Sunny Morning by Oregon Border</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-4.jpg" alt="weather-image-4">
+                    <figcaption>Lighting Storm by Preston</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-5.jpg" alt="weather-image-5">
+                    <figcaption>Foggy Morning by Orienta Lake</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-6.jpg" alt="weather-image-6">
+                    <figcaption>Foggy Morning on Jackson Hill</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-7.jpg" alt="weather-image-7">
+                    <figcaption>Winter Morning by Wheeler's Cabin</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-8.jpg" alt="weather-image-8">
+                    <figcaption>Teton Mountain Range on a Clear Day</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-9.jpg" alt="weather-image-9">
+                    <figcaption>Changing of Season in Soda Spring</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-10.jpg" alt="weather-image-10">
+                    <figcaption>Sunny Morning in the Field</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-11.jpg" alt="weather-image-11">
+                    <figcaption>A Teton Pass Jog on a Clear Day</figcaption>
+                </figure>
+                <figure>
+                    <img src ="images/placeholder-img.jpg" data-src="images/weather-gallery/weather-image-12.jpg" alt="weather-image-12">
+                    <figcaption>Cloudy Morning on the Field</figcaption>
+                </figure>
+            </section>
+            
+
+        </main>
+        <footer>
+            <p>&copy; Super Accurate Weather | Attributions | Douglas Phan</p>
+            <p><span id="currentYear"></span></p>
+            <article id = digital-clock></article>
+        </footer>
+        <!-- NORMAL SCRIPT FILES -->
+        <script src="scripts/toggleMenu.js"></script>
+        <script src="scripts/currentDate.js"></script>
+        <script src="scripts/currentTime.js"></script>
+
+        <script src="scripts/lazy-load.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="scripts/fonts.js"></script>
+
+
+    </body>
+</html>
