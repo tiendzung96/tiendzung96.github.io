@@ -8,12 +8,14 @@ const DOMstrings = {
     socialMediaInput: '.radio-group'
 };
 
-const engagementURL = 'https://raw.githubusercontent.com/tiendzung96/tiendzung96.github.io/master/social-time/engagement-time-11-2019.json';
+const socialTimeURL = 'https://raw.githubusercontent.com/tiendzung96/tiendzung96.github.io/master/social-time/social-time-11-2019.json';
 
-fetch(engagementURL)
+fetch(socialTimeURL)
 .then((response) => response.json())
-.then((engagementObject) => {
-// console.log(engagementObject);
+.then((socialTimeObject) => {
+console.log(socialTimeObject);
+const engagementObject = socialTimeObject.engagementTime;
+console.log(engagementObject);
 
     //DATA CONTROLLER
     const DataController =(function(){
