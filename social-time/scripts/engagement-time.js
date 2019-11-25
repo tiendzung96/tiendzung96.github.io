@@ -11,7 +11,7 @@ const engagementURL = 'https://raw.githubusercontent.com/tiendzung96/java-script
 fetch(engagementURL)
 .then((response) => response.json())
 .then((engagementObject) => {
-console.log(engagementObject);
+// console.log(engagementObject);
 
     //DATA CONTROLLER
     const DataController =(function(){
@@ -91,7 +91,7 @@ console.log(engagementObject);
 
                 dayInput = document.querySelector('#weekDay');
                 weekDayStrings = dayInput.options[dayInput.selectedIndex].text;
-                console.log (weekDayStrings);
+                // console.log (weekDayStrings);
 
                 engagementLevel = document.getElementById('engagement-level-value').textContent;
 
@@ -101,17 +101,23 @@ console.log(engagementObject);
 
                 section = '';
 
-                for (i = 0; i < arr.length; i++){
-                    console.log(arr[i]);
-
-                    newStartHour= convertFromMilitaryHour(arr[i].starthour);
-                    newEndHour= convertFromMilitaryHour(arr[i].endhour);
-
-                    console.log(newStartHour, newEndHour);
-
-                    section += '<div><section class = "engagement-time"><p class = "time-of-day">'+ newStartHour + ' - ' + newEndHour + '</p></section>';
-       
+                if (arr.length === 0){
+                    section += '<div><section class = "engagement-time"><p class = "no-time">There\'s no posting time today with this level of engagement.</p></section>';
+                } else{
+                    for (i = 0; i < arr.length; i++){
+                        // console.log(arr[i]);
+    
+                        newStartHour= convertFromMilitaryHour(arr[i].starthour);
+                        newEndHour= convertFromMilitaryHour(arr[i].endhour);
+    
+                        // console.log(newStartHour, newEndHour);
+    
+                        section += '<div><section class = "engagement-time"><p class = "time-of-day">'+ newStartHour + ' - ' + newEndHour + '</p></section>';
+           
+                    }
                 }
+
+                
 
                 document.querySelector(element).innerHTML = heading + section + '</div>';
            
@@ -135,10 +141,10 @@ console.log(engagementObject);
             weekDay = DataCtrl.getDay();
             socialMedia = DataCtrl.getSocialMedia();
             engagementLvl = DataCtrl.getEngagementValue();
-            console.log(weekDay, socialMedia, engagementLvl);
+            // console.log(weekDay, socialMedia, engagementLvl);
 
             postingTimeObj = DataCtrl.getPostingTime(weekDay, socialMedia, engagementLvl);
-            console.log(postingTimeObj);
+            // console.log(postingTimeObj);
             UICtrl.displayPostingTime(postingTimeObj, socialMedia, engagementLevel);
         }
 

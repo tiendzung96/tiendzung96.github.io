@@ -188,3 +188,13 @@ button:hover{
     margin: 5px;
     border-radius: 5px;
 }
+
+.no-time{
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    background-color: #404040;
+    padding: 20px 40px;
+    margin: 5px;
+    border-radius: 5px;
+}
