@@ -1,12 +1,4 @@
-const DOMstrings = {
-    facebookCheck: '#facebook',
-    engagementLvl: '#engagementLevel',
-    inputBtn: '.inputBtn',
-    engagementContainer: '.engagement-time-container',
-    socialMediaInput: '.radio-group'
-};
-
-const engagementURL = 'https://raw.githubusercontent.com/tiendzung96/java-script/master/engagement-time-object-nov2019.json';
+const postingTipsURL = 'https://raw.githubusercontent.com/tiendzung96/java-script/master/engagement-time-object-nov2019.json';
 
 fetch(engagementURL)
 .then((response) => response.json())

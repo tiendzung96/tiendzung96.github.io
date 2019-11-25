@@ -6,7 +6,7 @@ const DOMstrings = {
     socialMediaInput: '.radio-group'
 };
 
-const engagementURL = 'https://raw.githubusercontent.com/tiendzung96/java-script/master/engagement-time-object-nov2019.json';
+const engagementURL = 'https://raw.githubusercontent.com/tiendzung96/tiendzung96.github.io/master/social-time/engagement-time-11-2019.json';
 
 fetch(engagementURL)
 .then((response) => response.json())
