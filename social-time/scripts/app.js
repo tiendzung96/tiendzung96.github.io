@@ -13,9 +13,11 @@ const socialTimeURL = 'https://raw.githubusercontent.com/tiendzung96/tiendzung96
 fetch(socialTimeURL)
 .then((response) => response.json())
 .then((socialTimeObject) => {
-console.log(socialTimeObject);
+// console.log(socialTimeObject);
 const engagementObject = socialTimeObject.engagementTime;
-console.log(engagementObject);
+const tipsObject = socialTimeObject.socialMediaTips;
+
+console.log(tipsObject);
 
     //DATA CONTROLLER
     const DataController =(function(){
@@ -89,6 +91,8 @@ console.log(engagementObject);
         }
 
         return{
+            
+
             displayPostingTime: function(arr, socMedia){
                 let heading, section, element, weekDayStrings, newStartHour, newEndHour, socialMediaPlatform, engagementLevel;
                 element = DOMstrings.engagementContainer;
@@ -125,6 +129,26 @@ console.log(engagementObject);
 
                 document.querySelector(element).innerHTML = heading + section + '</div>';
            
+            },
+
+            displayTips: function(socMedia, element){
+                // console.log(socialMediaPlatform);
+                function getSocialMediaObject(socMedia){
+                    return tipsObject.find(element => element.socialmedia === socMedia); 
+                }
+                const socialMediaPlatform = socMedia.slice(0,1).toLocaleUpperCase() + socMedia.slice(1);
+
+                const postingTipsArr = getSocialMediaObject(socMedia).postTips;
+                 function getRandomInt(max) {
+                    return Math.floor(Math.random() * Math.floor(max));
+                }
+                const randomTip = postingTipsArr[getRandomInt(postingTipsArr.length)];
+                const tip = randomTip.tip;
+                const tipDesc = randomTip.desc;
+
+                document.querySelector(DOMstrings.postingContainer).innerHTML = '<h2>'+ socialMediaPlatform +' Tip of the Day</h2><section class = "tips"><h3>'+ tip + '</h3>'+ tipDesc +'</section>';
+
+
             }
             
         }
@@ -156,6 +180,8 @@ console.log(engagementObject);
             postingTimeObj = DataCtrl.getPostingTime(weekDay, socialMedia, engagementLvl);
             // console.log(postingTimeObj);
             UICtrl.displayPostingTime(postingTimeObj, socialMedia, engagementLevel);
+
+            UICtrl.displayTips(socialMedia);
 
         }
 
