@@ -53,6 +53,15 @@ function weatherData(zipCode) {
       .then((forecastObject) => {
         // console.log(forecastObject);
     
+        //GET DATE
+        let currentDate = new Date();
+        let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    
+        document.getElementById("day-1").innerHTML = days[currentDate.getDay()+1];
+        document.getElementById("day-2").innerHTML = days[currentDate.getDay()+2];
+        document.getElementById("day-3").innerHTML = days[currentDate.getDay()+3];
+        document.getElementById("day-4").innerHTML = days[currentDate.getDay()+4];
+        document.getElementById("day-5").innerHTML = days[currentDate.getDay()+5];
     
     // TEST ***********************************************
     for (let i=1; i<6; i++){
