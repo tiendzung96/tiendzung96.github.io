@@ -218,7 +218,7 @@ footer p{
 
 /*-----------------PRESTON PAGE------------------ */
 
-main{
+#preston main, #fish-haven main, #soda-springs main{
     padding:25px;
     max-width: 1000px;
     min-width: 300px;
