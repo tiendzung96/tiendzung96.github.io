@@ -218,7 +218,7 @@ footer p{
 
 /*-----------------PRESTON PAGE------------------ */
 
-#preston main{
+main{
     padding:25px;
     max-width: 1000px;
     min-width: 300px;
@@ -226,8 +226,11 @@ footer p{
 
 }
 
+#preston .heroimg{
+    background-image: url("/cit230/lesson11/images/preston-cover.jpg");
 
-#heroimg{
+}
+.heroimg{
 /* The image used */
     /* background-image: url("/cit230/lesson5/images/preston-cover.jpg"); */
     padding: 25px;
@@ -242,7 +245,7 @@ footer p{
 
 }
 
-#heroimg h1{
+.heroimg h1{
     font-size: 3.6em;
     font-weight: 700;
     border-left: .2em solid rgb(0, 157, 230);
@@ -253,7 +256,7 @@ footer p{
   
 }
 
-#heroimg section{
+.heroimg section{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10pt;
     color: white;
@@ -261,14 +264,14 @@ footer p{
     width: 200px;
 }
 
-#heroimg h2{
+.heroimg h2{
     text-transform: uppercase;
     font-size: .9em;
     margin-top: 0px;
     border-bottom: white 1px solid;
 }
 
-#heroimg p{
+.heroimg p{
     margin: 2px;
     font-size: .8em;
     letter-spacing: 1pt;
@@ -417,40 +420,14 @@ main a:visited{
     padding: 10px;
 }
 
-
-
-/* LIVE COVER STYLE*/
-
-.sunrise{
-    background-image: url("/cit230/lesson11/images/live-cover/preston-sunrise.jpg");
+/*-----------------FISH HAVEN PAGE------------------ */
+#fish-haven .heroimg{
+    background-image: url("/cit230/lesson11/images/fish-haven.jpg")
 }
 
-.sunrise-pano{
-    background-image: url("/cit230/lesson11/images/live-cover/preston-sunrise-pano.jpg");
-}
-
-.daytime{
-    background-image: url("/cit230/lesson11/images/live-cover/preston-daytime.jpg");
-}
-
-.daytime-pano{
-    background-image: url("/cit230/lesson11/images/live-cover/preston-daytime-pano.jpg");
-}
-
-.sunset{
-    background-image: url("/cit230/lesson11/images/live-cover/preston-sunset.jpg");
-}
-
-.sunset-pano{
-    background-image: url("/cit230/lesson11/images/live-cover/preston-sunset-pano.jpg");
-}
-
-.night{
-    background-image: url("/cit230/lesson11/images/live-cover/preston-night.jpg");
-}
-
-.night-pano{
-    background-image: url("/cit230/lesson11/images/live-cover/preston-night-pano.jpg");
+/*-----------------SODA SPRING PAGE------------------ */
+#soda-springs .heroimg{
+    background-image: url("/cit230/lesson11/images/soda-springs.jpg")
 }
 
 /*-----------------GALLERY PAGE------------------ */

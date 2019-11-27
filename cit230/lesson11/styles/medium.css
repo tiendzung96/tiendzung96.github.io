@@ -93,14 +93,14 @@
         display: block;
     }
 
-    #heroimg{
+    .heroimg{
             /* background-image: url("/cit230/lesson5/images/preston-cover-pano.jpg"); */
             background-position: center; 
             min-height: 150px;
             display: grid;
             grid-template-columns: 2.5fr 1fr;
     }
-    #heroimg h1{
+    .heroimg h1{
         height: 1.2em;
     }
     .forecast5{
