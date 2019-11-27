@@ -34,7 +34,7 @@ html {  box-sizing: border-box; }
 
 body{
     min-width: 300px;
-    background-image: url("/cit230/lesson7/images/preston-background.jpg");
+    background-image: url("/cit230/lesson11/images/preston-background.jpg");
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
@@ -312,7 +312,7 @@ main a:visited{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: 4px #353535 solid;
-    background-image: url("/cit230/lesson7/images/weather-map.jpg");
+    background-image: url("/cit230/lesson11/images/weather-map.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -422,42 +422,42 @@ main a:visited{
 /* LIVE COVER STYLE*/
 
 .sunrise{
-    background-image: url("/cit230/lesson7/images/live-cover/preston-sunrise.jpg");
+    background-image: url("/cit230/lesson11/images/live-cover/preston-sunrise.jpg");
 }
 
 .sunrise-pano{
-    background-image: url("/cit230/lesson7/images/live-cover/preston-sunrise-pano.jpg");
+    background-image: url("/cit230/lesson11/images/live-cover/preston-sunrise-pano.jpg");
 }
 
 .daytime{
-    background-image: url("/cit230/lesson7/images/live-cover/preston-daytime.jpg");
+    background-image: url("/cit230/lesson11/images/live-cover/preston-daytime.jpg");
 }
 
 .daytime-pano{
-    background-image: url("/cit230/lesson7/images/live-cover/preston-daytime-pano.jpg");
+    background-image: url("/cit230/lesson11/images/live-cover/preston-daytime-pano.jpg");
 }
 
 .sunset{
-    background-image: url("/cit230/lesson7/images/live-cover/preston-sunset.jpg");
+    background-image: url("/cit230/lesson11/images/live-cover/preston-sunset.jpg");
 }
 
 .sunset-pano{
-    background-image: url("/cit230/lesson7/images/live-cover/preston-sunset-pano.jpg");
+    background-image: url("/cit230/lesson11/images/live-cover/preston-sunset-pano.jpg");
 }
 
 .night{
-    background-image: url("/cit230/lesson7/images/live-cover/preston-night.jpg");
+    background-image: url("/cit230/lesson11/images/live-cover/preston-night.jpg");
 }
 
 .night-pano{
-    background-image: url("/cit230/lesson7/images/live-cover/preston-night-pano.jpg");
+    background-image: url("/cit230/lesson11/images/live-cover/preston-night-pano.jpg");
 }
 
 /*-----------------GALLERY PAGE------------------ */
 
 
 #weather-gallery-title{
-    background-image: url("/cit230/lesson7/images/weather-gallery-cover.jpg");
+    background-image: url("/cit230/lesson11/images/weather-gallery-cover.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

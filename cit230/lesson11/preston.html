@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
     </head>
-    <body id="preston" onload="weatherData('83263')">
+    <body id="preston" > 
+            <!-- onload="weatherData('83263')" -->
         <div id='pancakes' class = 'hidden'><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div>
 
         <header>
@@ -29,7 +30,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main onload="forecast('83263')">
             <div id="heroimg"> 
                 <h1>Preston, Idaho</h1>
                 <section>
@@ -47,7 +48,7 @@
                 </section>
             </div>
             
-            <div class="section-container" onload="forecast('83263')">
+            <div class="section-container">
                 <section class="forecast5">
                     <h2>High Temperature Forecast</h2>
                     <table>
@@ -132,13 +133,13 @@
             <article id = digital-clock></article>
         </footer>
         <!-- TEST FILES -->
-        <script src="scripts/testforecast.js"></script>
-        <script src="scripts/testweather.js"></script>
+        <!-- <script src="scripts/testforecast.js"></script>
+        <script src="scripts/testweather.js"></script> -->
         <!-- NORMAL SCRIPT FILES -->
         <script src="scripts/toggleMenu.js"></script>
         <script src="scripts/currentDate.js"></script>
         <script src="scripts/currentTime.js"></script>
-        <script src="scripts/forecast.js"></script>
+        <!-- <script src="scripts/forecast.js"></script> -->
         <script src="scripts/liveCoverImage.js"></script>
         <script src="scripts/weatherData.js"></script>
         <script src="scripts/tempMap.js"></script>

@@ -45,4 +45,28 @@ function weatherData(zipCode) {
     
     });
     
+    //FORECAST-----------------------------------------------------
+
+    const forecastURL = 'http://api.openweathermap.org/data/2.5/forecast?zip=' + zipCode + ',us&units=imperial&appid=9479da382fe4e6454b2b21f3e81c03d7'; //Preston = 83263
+    fetch(forecastURL)
+      .then((responseF) => responseF.json())
+      .then((forecastObject) => {
+        // console.log(forecastObject);
+    
+    
+    // TEST ***********************************************
+    for (let i=1; i<6; i++){
+        document.getElementById("temp-"+ i).innerHTML = Math.ceil(forecastObject.list[i].main.temp) + '&deg;F';
+    
+        
+        const imagesrc = 'images/weather-icon/' +forecastObject.list[i].weather[0].icon + '.png';  
+        const desc = forecastObject.list[i].weather[0].description;  
+        
+    
+        document.getElementById('forecast-icon-' + i).setAttribute('src', imagesrc); 
+    
+        document.getElementById('forecast-icon-' + i).setAttribute('alt', desc);
+    }
+    
+    });
 };
