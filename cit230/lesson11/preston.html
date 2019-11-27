@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
     </head>
-    <body id="preston">
+    <body id="preston" onload="weatherData('83263')">
         <div id='pancakes' class = 'hidden'><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div>
 
         <header>
@@ -21,11 +21,11 @@
                 <ul class="navigation">
                     <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="preston-11.html" class="active-page">Preston</a></li>
+                    <li><a href="preston.html" class="active-page">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
-                    <li><a href="stormcenter-11.html">Storm Center</a></li>
-                    <li><a href="gallery-11.html">Gallery</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </header>
@@ -47,7 +47,7 @@
                 </section>
             </div>
             
-            <div class="section-container">
+            <div class="section-container" onload="forecast('83263')">
                 <section class="forecast5">
                     <h2>High Temperature Forecast</h2>
                     <table>

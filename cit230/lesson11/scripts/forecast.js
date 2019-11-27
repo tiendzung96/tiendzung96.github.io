@@ -14,7 +14,7 @@ showCurrentDate();
 
 
 /* GET TEMP */
-function forecastFive(zipCode){
+function forecast(zipCode){
     const forecastURL = 'http://api.openweathermap.org/data/2.5/forecast?zip=' + zipCode + ',us&units=imperial&appid=9479da382fe4e6454b2b21f3e81c03d7'; //Preston = 83263
     fetch(forecastURL)
       .then((responseF) => responseF.json())
