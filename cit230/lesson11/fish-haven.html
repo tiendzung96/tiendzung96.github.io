@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
     </head>
-    <body id="fish-haven" onload="weatherData('83287')"> 
+    <body id="fish-haven" onload="weatherData('83287'); upcomingEvents(fishHaven,fishHavenName);"> 
         <header>
             <img class="black-logo" src="images/weather-sitelogo.png">
             <img class="white-logo" src="images/weather-sitelogo-white.png">
@@ -81,9 +81,14 @@
                         </article>
                 </section>
 
-                <section id ="temp-map">
+                <!-- <section id ="temp-map">
                         <h2>U. S. Temperature Map</h2>
                         <div id="weather-map"></div>
+                </section> -->
+
+                <section id ="upcoming-events">
+                    <h2>Upcoming Events</h2>
+                    <div id="fishHaven-upcoming-events-desc" class="events-container"></div>
                 </section>
 
                 <section id ="contact">
@@ -120,11 +125,14 @@
         <script src="scripts/currentTime.js"></script>
         <!-- <script src="scripts/forecast.js"></script> -->
         <script src="scripts/weatherData.js"></script>
-        <script src="scripts/tempMap.js"></script>
-        <script src="scripts/todoListGenerate.js"></script>
+        <script src="scripts/town-events.js"></script>
+
+        <!-- <script src="scripts/tempMap.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="scripts/fonts.js"></script>
-
+        <script>
+            fetchTownEvents('fishHaven', 'Fish Haven');
+        </script>
 
     </body>
 </html>

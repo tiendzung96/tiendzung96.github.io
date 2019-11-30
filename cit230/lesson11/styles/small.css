@@ -386,13 +386,14 @@ main a:visited{
     color: white;
 }
 
-.section-container article{
+.section-container article, .events-container{
     padding: 25pt 15pt 15pt;
     background-color: rgba(255, 255, 255, 0.7);
     margin-top: -25pt;
     border-radius: 0pt 10pt 10pt 10pt;
     line-height: 1.3em;
 }
+
 
 .article-date{
    margin-top: 0px;
@@ -403,6 +404,21 @@ main a:visited{
 
 .section-container article img{
     width: 100%;
+}
+
+.events-container p{
+    color: white;
+    background-color: #606060;
+    border-radius: 3px;
+    margin-bottom: 5px !important;
+    padding: 15px 20px;
+    transition: .3s;
+
+}
+
+.events-container p:hover{
+    background-color: rgb(0, 157, 230);
+    cursor: pointer;
 }
 
 

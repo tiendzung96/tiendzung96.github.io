@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
     </head>
-    <body id="preston" onload="weatherData('83263')"> 
+    <body id="preston" onload="weatherData('83263'); "> 
             <!--  -->   
         <div id='pancakes' class = 'hidden'><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div>
 
@@ -82,9 +82,14 @@
                         </article>
                 </section>
 
-                <section id ="temp-map">
+                <!-- <section id ="temp-map">
                         <h2>U. S. Temperature Map</h2>
                         <div id="weather-map"></div>
+                </section> -->
+
+                <section id ="upcoming-events">
+                    <h2>Upcoming Events</h2>
+                    <div id="preston-upcoming-events-desc" class="events-container"></div>
                 </section>
 
                 <section id ="todolist-container">
@@ -140,13 +145,18 @@
         <script src="scripts/currentDate.js"></script>
         <script src="scripts/currentTime.js"></script>
         <!-- <script src="scripts/forecast.js"></script> -->
-        <script src="scripts/liveCoverImage.js"></script>
+        <!-- <script src="scripts/liveCoverImage.js"></script> -->
         <script src="scripts/weatherData.js"></script>
-        <script src="scripts/tempMap.js"></script>
+        <script src="scripts/town-events.js"></script>
+
+        <!-- <script src="scripts/tempMap.js"></script> -->
         <script src="scripts/todoListGenerate.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="scripts/fonts.js"></script>
+        <script>
+            fetchTownEvents('preston', 'Preston');
 
+        </script>
 
     </body>
 </html>

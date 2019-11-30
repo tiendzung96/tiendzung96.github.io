@@ -13,7 +13,8 @@ fetch(townURL)
 
             const preston = getTownObject('Preston');
             const prestonName = 'preston';
-            getTownData(preston, prestonName);  
+            getTownData(preston, prestonName); 
+            console.log('preston') ;
 
             let sodaSprings = getTownObject('Soda Springs');
             let sodaSpringsName = 'sodaSprings';
@@ -32,6 +33,8 @@ fetch(townURL)
             }
 
             dataCounter();
+
+
           }
       )
   });
