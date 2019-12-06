@@ -1,0 +1,43 @@
+/* TABLET VIEW */
+@media only screen and (min-width: 800px){
+
+    .navigation-large{
+        display: initial;
+        position: fixed;
+        right: 50px;
+    }
+
+    header label{
+        display: none;
+    }
+
+    .trending-fig-wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20pt;
+    }
+    
+
+    .deals-wrapper{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20pt;
+        row-gap: 20pt;
+
+    }
+
+    .deals{
+        max-width: 800px;
+
+    }
+
+    .deals div{
+        transform: translateY(282px);
+
+    }
+
+    .deals:hover > div{
+        backdrop-filter: brightness(0.2);
+        transform: translateY(200px);
+    }
+
+
+}
