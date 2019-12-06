@@ -14,7 +14,11 @@ html{
 
 body{
     margin: 0;
-    min-width: 280px;
+    min-width: 300px;
+}
+
+main{
+    padding-top: 40px;
 }
 
 /* EXTRA WHITE SPACE */
@@ -179,8 +183,8 @@ body input:checked ~ nav > ul > li {
 /* ======================== HERO IMAGE ======================== */
 
 .hero-img{
-    padding: 60px 40px;
-    height: 600px;
+    padding: 0px 40px;
+    height: 500px;
     position: relative;
     background-image: url('../images/peter-vanosdall-hawaii-unsplash.jpg');
     background-position: center;
@@ -244,7 +248,7 @@ body input:checked ~ nav > ul > li {
 
 .main-content{
     font-family: 'Barlow', sans-serif;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(238, 238, 238);
     padding: 10px 10px 40px;
 }
 
@@ -257,7 +261,36 @@ body input:checked ~ nav > ul > li {
     max-width: 1080px;
     margin: auto;
 }
+/* ======================== Amenities ======================== */
 
+.amenities-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 40px;
+
+}
+
+.amenities-item{
+    background-color: white;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    width: 100%;
+}
+
+.amenities-item img{
+    width: 100px;
+}
+
+.amenities-item p{
+    padding: 0 20px 10px;
+    margin-top: 0;
+    color: #757575;
+    font-weight: bold;
+    letter-spacing: 1pt;
+}
 /* ======================== Trending ======================== */
 
 .trending figure{
@@ -369,8 +402,8 @@ figure img{
 }
 
 #deal-1{
-    background-image: url('../images/temple-view-restaurant.jpg');
-    background-position: center;
+    background-image: url('../images/temples-families-mothers-youth.jpg');
+    background-position: right;
 
 }
 
@@ -415,3 +448,8 @@ footer ul{
 footer li{
     display: inline;
 }
+
+/* ================================================ */
+/* ============== RESERVATION PAGE ================ */
+/* ================================================ */
+

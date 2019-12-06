@@ -11,6 +11,12 @@
         display: none;
     }
 
+    .amenities-wrapper{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        gap: 25px;
+    }
+
     .trending-fig-wrapper{
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 20pt;

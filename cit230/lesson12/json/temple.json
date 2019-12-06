@@ -1,0 +1,24 @@
+{"templesList":
+    [
+        {
+        "name": "Rome Italy Temple",
+        "location": "Rome, Italy",
+        "address": "Via di Settebagni 376, Rome RM, Italy",
+        "phone" : "(39) 06-9480-5050",
+        "email" : "",
+        "history" :
+            {
+                "announced" : "4 October 2008",
+                "groundbreaking" : "23 October 2010",
+                "dedicated" : "10 March 2019"
+            },
+        "service":
+            {
+              "rental" : "Clothing rental available",
+              "cafeteria" : "No cafeteria available",
+              "housing" : "Patron housing available",
+              "discCenter" : "Distribution center nearby"
+            }
+        }
+    ]
+}
