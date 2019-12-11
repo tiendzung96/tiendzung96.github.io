@@ -186,11 +186,14 @@ body input:checked ~ nav > ul > li {
     padding: 0px 40px;
     height: 500px;
     position: relative;
-    background-image: url('../images/peter-vanosdall-hawaii-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 
+}
+
+#home .hero-img{
+    background-image: url('../images/peter-vanosdall-hawaii-unsplash.jpg');
 }
 
 .hero-img-text-wrap{
@@ -243,12 +246,12 @@ body input:checked ~ nav > ul > li {
 
 }
 
-/* ======================== HERO IMAGE ======================== */
+/* ======================== MAIN ======================== */
 
 
 .main-content{
     font-family: 'Barlow', sans-serif;
-    background-color: rgb(238, 238, 238);
+    background-color: #f3f3f3;
     padding: 10px 10px 40px;
 }
 
@@ -259,7 +262,7 @@ body input:checked ~ nav > ul > li {
 
 .main-content section{
     max-width: 1080px;
-    margin: auto;
+    margin: 0 auto;
 }
 /* ======================== Amenities ======================== */
 
@@ -322,6 +325,7 @@ figure img{
 .trending p{
     padding: 0 20px;    
     margin: 10px 10px 50px;
+
 }
 
 .trending a{
@@ -413,6 +417,12 @@ figure img{
 
 }
 
+#deal-3{
+    background-image: url('../images/temple-view-restaurant.jpg');
+    background-position: center;
+
+}
+
 
 
 /* ======================== Footer ======================== */
@@ -426,6 +436,15 @@ footer p{
     margin: 0;
 }
 
+footer p a{
+    padding: 0;
+}
+
+footer hr{
+    max-width: 800px;
+    border: none;
+    border-top: 1px solid #212121;
+}
 footer a{
     text-decoration: none;
     font-family: 'Barlow', sans-serif;
@@ -452,4 +471,167 @@ footer li{
 /* ================================================ */
 /* ============== RESERVATION PAGE ================ */
 /* ================================================ */
+
+#reservation .main-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 70px;
+}
+
+#reservation .main-content h1{
+    text-align: left;
+}
+
+form p{
+    margin: 3px 0;
+    color: #909090
+}
+
+form label{
+    display: block;
+    font-size: .8em;
+    font-weight: 800;
+}
+
+form>div{
+    margin: 20px 0;
+}
+
+form input, form select{
+    height: 3em;
+    margin: 3px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+form textarea{
+    margin: 3px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="submit"]{
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 10px 20px;
+    color: #212121;
+    border: #212121 2px solid;
+    letter-spacing: 2pt;
+    transition: .2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active{
+    color: white;
+    background-color: #D3A839;
+    border-color: #D3A839;
+    transition: .2s ease-in-out;
+}
+
+/* ================================================ */
+/* ================ TEMPLE PAGE =================== */
+/* ================================================ */
+
+.header-img{
+    padding: 0px 40px;
+    height: 260px;
+    position: relative;
+    background-size: cover;
+
+}
+
+#temple .header-img{
+    background-image: url('../images/joshua-hoehne-temple-unsplash.jpg');
+    background-position: center;
+
+}
+
+.header-img-text-wrap{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 600px;
+    text-align: center;
+
+}
+
+.header-img h1{
+    font-size: 3.2em;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.24);
+}
+.temple-container {
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 50px !important;
+
+}
+.temple-container h2{
+    font-size: 2em;
+    margin: 0;
+    padding: 40px 50px;
+    background-color: #212121;
+    color: #D3A839;
+}
+.temple-container h3{
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.temple-container h3:first-child{
+    margin-top: 0;
+}
+
+.temple-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px 50px;
+
+}
+
+.temple-container img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.current-weather{
+    background-color: #212121;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+.current-weather h3{
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.current-weather img{
+    width: 70px;
+    margin: 0;
+}
+.current-weather p{
+    margin: 3px;
+}
+
+
+
+/* .temple-data{
+    overflow: scroll;
+    height: 400px;
+} */
+
+.temple-data address{
+    font-style: normal;
+}
+
 
