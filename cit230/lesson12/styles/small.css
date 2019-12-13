@@ -252,12 +252,13 @@ body input:checked ~ nav > ul > li {
 .main-content{
     font-family: 'Barlow', sans-serif;
     background-color: #f3f3f3;
-    padding: 10px 10px 40px;
+    padding: 40px 10px;
 }
 
 .main-content h1{
     font-size: 2.5em;
     text-align: center;
+    margin-top: 0;
 }
 
 .main-content section{
@@ -295,6 +296,7 @@ body input:checked ~ nav > ul > li {
     letter-spacing: 1pt;
 }
 /* ======================== Trending ======================== */
+
 
 .trending figure{
     background-color: white;
@@ -483,6 +485,10 @@ footer li{
     text-align: left;
 }
 
+form{
+    max-width: 700px;
+}
+
 form p{
     margin: 3px 0;
     color: #909090
@@ -522,6 +528,7 @@ input[type="submit"]{
     transition: .2s ease-in-out;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+    width: 10em;
 }
 
 input[type="submit"]:hover, input[type="submit"]:active{
@@ -571,7 +578,7 @@ input[type="submit"]:hover, input[type="submit"]:active{
 .temple-container {
     background-color: white;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    margin-top: 50px !important;
+    margin-bottom: 50px !important;
 
 }
 .temple-container h2{
@@ -640,11 +647,93 @@ input[type="submit"]:hover, input[type="submit"]:active{
     margin: 3px;
 }
 
+/* ================================================ */
+/* =============== SERVICES PAGE ================== */
+/* ================================================ */
+
+#services .header-img{
+    background-image: url('../images/louis-hansel-service-unsplash.jpg');
+    background-position: center;
+
+}
+
+.special-services figure{
+    background-color: white;
+    max-width: 530px;
+    min-width: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 550px;
+    position: relative;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.services-fig-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.special-services h2{
+    padding: 0 20px;
+    margin: 10px;
+}
+
+.special-services p{
+    padding: 0 20px;    
+    margin: 10px 10px 50px;
+
+}
+
+.special-services a{
+    bottom: 30px;
+    position: absolute;
+    left: 30px;
+}
+
+.contact-form-wrapper{
+    padding: 0 40px;
+}
+
+.contact-form-wrapper h2{
+    margin-top: 0;
+}
+
+#services-reception .header-img{
+    background-image: url('../images/bruno-cervera-reception-unsplash-highres.jpg');
+    background-position: center;
+
+}
+
+#services-missionary .header-img{
+    background-image: url('../images/sister-missionaries-el-salvador-851709-mobile-highres.jpg');
+    background-position: top;
+
+}
 
 
-/* .temple-data{
-    overflow: scroll;
-    height: 400px;
-} */
+#topnotch-catering{
+    background-image: url('../images/asiya-kiev-caterunsplash.jpg');
+    background-position: right;
 
+}
 
+#personalized-decor{
+    background-image: url('../images/marc-babin-decor-reception-unsplash.jpg');
+    background-position: center;
+
+}
+
+/* ================================================ */
+/* ================ CONTACT PAGE ================== */
+/* ================================================ */
+
+#contact .header-img{
+    background-image: url('../images/david-alpert-hotel-panounsplash.jpg');
+    background-position: center;
+
+}
+
+#contact .map{
+    margin: 0 30px;
+}
