@@ -4,7 +4,7 @@ function templeData() {
         .then((response) => response.json())
         .then((templeObject) => {
             templeList = templeObject.templesList;
-            console.log(templeList);
+            // console.log(templeList);
             
             getTempleData(0, "barranquilla-colombia");
             getTempleData(1, "laie-hawaii");
