@@ -45,6 +45,25 @@ function templeData() {
                     templeClosure += "<li>" + templeList[i].schedule.templeClosures[c] + "</li>";
                 }
 
+                const announced = '<p><strong>Announced:</strong> ' + templeList[i].history.announced +'<p>';
+                const dedicated = '<p><strong>Dedicated:</strong> ' + templeList[i].history.dedicated + '</p>';
+                const groundBreaking = '<p><strong>Ground Breaking:</strong> ' + templeList[i].history.groundbreaking + '</p>';
+
+                if(templeList[i].history.rededicated !== undefined){
+                    let rededicated ="";
+                    const rededicatedArrLength = templeList[i].history.rededicated.length;
+                    for(r = 0; r < rededicatedArrLength; r++){
+                        rededicated += '<p><strong>Rededicated:</strong> ' + templeList[i].history.rededicated[r] + '</p>';
+                    }
+                    const history = announced + groundBreaking + dedicated + rededicated;
+                    document.querySelector("." + templeName + "-history").innerHTML = history;
+
+                } else {
+                    const history = announced + groundBreaking + dedicated;
+                    document.querySelector("." + templeName + "-history").innerHTML = history;
+
+                }                
+                
                 document.querySelector("." + templeName + "-address").innerHTML = address;
                 document.querySelector("." + templeName + "-phone").innerHTML = phoneLink;
                 document.querySelector("." + templeName + "-service").innerHTML = service;
@@ -58,5 +77,3 @@ function templeData() {
 };
 
 templeData();
-
-// document.querySelector(".main-content").innerHTML += '<section class = "temple-container"><h2>' + name + '</h2><div class ="temple-info"><img src="'+ imgSRC +'" alt="'+ name +'"><div class = "temple-data"><h3>Address</h3>'+ address +'<h3>Phone Number</h3>'+ phoneLink +'<h3>Service</h3>'+ service +'<h3>Ordinace Schedule</h3><h4>Baptism</h4><ul>'+ baptism +'</ul><h4>Endownment</h4><ul>'+ endownment +'</ul><h4>Sealing</h4><ul>' + sealing + ' </ul><h3>Temple Closure</h3><ul>' + templeClosure + '</ul></div></div></section>'

@@ -3,7 +3,7 @@ function weatherData(cityCode, cityName) {
     fetch(weatherURL)
       .then((response) => response.json())
       .then((weatherObject) => {
-        console.log(weatherObject);
+        // console.log(weatherObject);
     
     //TESTING
         let weather = {};

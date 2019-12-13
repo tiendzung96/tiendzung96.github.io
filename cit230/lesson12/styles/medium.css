@@ -7,6 +7,10 @@
         right: 50px;
     }
 
+    .mobile{
+        display: none;
+    }
+
     header label{
         display: none;
     }
