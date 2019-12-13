@@ -747,3 +747,12 @@ input[type="submit"]:hover, input[type="submit"]:active{
 #contact .map h2{
     margin-top: 0;
 }
+
+/* ================================================ */
+/* ================ PROJECT PAGES ================= */
+/* ================================================ */
+
+.project{
+    max-width: 800px;
+    margin: 0 auto;
+}
