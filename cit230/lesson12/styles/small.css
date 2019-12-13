@@ -364,7 +364,7 @@ figure img{
     color: white;
     text-align: center;
     padding: 20px 40px 50px;
-
+    margin-bottom: 40px !important;
 }
 
 .dark-section h2{
