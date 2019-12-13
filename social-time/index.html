@@ -10,68 +10,81 @@
     <title>Social Time</title>
 </head>
 <body>
-    <header>
-        <!-- <h1>
-            Social Time
-        </h1> -->
-        <img src="images/social-time-logo.png" alt="social-time-logo">
-    </header>
-    <main>
-        <form id = "form" class = "input-container container">
-            <div>
-                <span>Day of the Week</span>
-                
-                <select name="weekDay" id="weekDay">
-                    <option value="1" selected>Monday</option>
-                    <option value="2">Tuesday</option>
-                    <option value="3">Wednesday</option>
-                    <option value="4">Thursday</option>
-                    <option value="5">Friday</option>
-                    <option value="6">Saturday</option>
-                    <option value="0">Sunday</option>
-                </select> 
-            </div>
-            <div>
-                <p>Social Media Platform</p>
-                <div class="radio-group">
-                        <input type="radio" id="facebook" name="social-media" value = "facebook"><label for="facebook">Facebook</label><input type="radio" id="option-two" name="social-media" value = "instagram"><label for="option-two">Instagram</label><input type="radio" id="option-three" name="social-media" value = "twitter"><label for="option-three">Twitter</label>
+    <div class = "preloader hidden">
+        <p>LOADING</p>
+        <div class="la-ball-beat la-2x ">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class = "content">
+        <header>
+            <!-- <h1>
+                Social Time
+            </h1> -->
+            <img src="images/social-time-logo.png" alt="social-time-logo">
+        </header>
+        <main>
+            <form id = "form" class = "input-container container">
+                <div>
+                    <span>Day of the Week</span>
+                    
+                    <select name="weekDay" id="weekDay">
+                        <option value="1" selected>Monday</option>
+                        <option value="2">Tuesday</option>
+                        <option value="3">Wednesday</option>
+                        <option value="4">Thursday</option>
+                        <option value="5">Friday</option>
+                        <option value="6">Saturday</option>
+                        <option value="0">Sunday</option>
+                    </select> 
                 </div>
+                <div>
+                    <p>Social Media Platform</p>
+                    <div class="radio-group">
+                            <input type="radio" id="facebook" name="social-media" value = "facebook"><label for="facebook">Facebook</label><input type="radio" id="option-two" name="social-media" value = "instagram"><label for="option-two">Instagram</label><input type="radio" id="option-three" name="social-media" value = "twitter"><label for="option-three">Twitter</label>
+                    </div>
+                </div>
+                <div>
+                    <p>Engagement Level</p>
+                    <strong id="engagement-level-value">0 - 25%</strong>
+                    <input type="range" id="engagementLevel" value="0" min="0" max="3" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                </div>
+                <div>
+                    <button  onclick="preloader()" type="button" class= "inputBtn hidden">Submit</button>
+                </div>
+            </form>
+            <div class = "engagement-time-container container hidden">
+                <!-- <h2>Monday's Posting Time</h2>
+                <p>with 0 - 25% Engagement on Facebook</p>
+                <div>
+                    <section class = "engagement-time">
+                        <p class = "time-of-day">12pm-10pm</p>
+                    </section>
+                    <section class = "engagement-time">
+                        <p class = "time-of-day">4pm-7pm</p>
+                    </section>
+                    <section class = "engagement-time">
+                        <p class = "time-of-day">5pm-8pm</p>
+                    </section>
+                </div>  -->
             </div>
-            <div>
-                <p>Engagement Level</p>
-                <strong id="engagement-level-value">0 - 25%</strong>
-                <input type="range" id="engagementLevel" value="0" min="0" max="3" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <div class = "posting-tips-container container hidden">
+                <!-- a -->
+                
             </div>
-            <div>
-                <button type="button" class= "inputBtn hidden">Submit</button>
+            <div class = "reference-container hidden">
+                <p>All data is collected by</p><img src="images/sprout-social-logo.png" style = "width:120px" alt="Sprout Social Logo">
             </div>
-        </form>
-        <div class = "engagement-time-container container hidden">
-            <!-- <h2>Monday's Posting Time</h2>
-            <p>with 0 - 25% Engagement on Facebook</p>
-            <div>
-                <section class = "engagement-time">
-                    <p class = "time-of-day">12pm-10pm</p>
-                </section>
-                <section class = "engagement-time">
-                    <p class = "time-of-day">4pm-7pm</p>
-                </section>
-                <section class = "engagement-time">
-                    <p class = "time-of-day">5pm-8pm</p>
-                </section>
-            </div>  -->
-        </div>
-        <div class = "posting-tips-container container hidden">
-            <!-- a -->
-            
-        </div>
-        <div class = "reference-container hidden">
-            <p>All data is collected by</p><img src="images/sprout-social-logo.png" style = "width:120px" alt="Sprout Social Logo">
-        </div>
-    </main>
+        </main>
+    </div>
+    
     
     <script src="scripts/form.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/preloader.js"></script>
+
 
 </body>
 </html>
