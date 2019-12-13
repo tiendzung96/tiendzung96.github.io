@@ -474,6 +474,12 @@ footer li{
 /* ============== RESERVATION PAGE ================ */
 /* ================================================ */
 
+#reservation .header-img{
+    background-image: url('../images/runnyrem-LfqmND-reservation-unsplash.jpg');
+    background-position: center;
+
+}
+
 #reservation .main-content{
     display: grid;
     grid-template-columns: 1fr;
