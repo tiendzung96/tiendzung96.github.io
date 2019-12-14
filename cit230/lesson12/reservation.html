@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/temple-inn-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
+    
 
     <title>Make A Reservation | Temple Inn & Suite</title>
 </head>
@@ -112,25 +114,66 @@
                             <option value="Tokyo, Japan">Tokyo, Japan</option>
                         </select>                    
                     </div>
-                    <div>
-                        <label for="guestAdult">Adult Guests Number:* </label>
-                        <input type="number" id="guestAdult" name="guestAdult" required>                
+                    <h2>Add room</h2>
+                    <div id = "guest-room-form">
+                        <div class = "roomType-container">
+                            <label for="roomType">Room Type:* </label>
+                            <select required name="roomType" id="roomType">
+                                <option selected disabled>Select Room Type ...</option>
+                                <option value="Single">Single</option>
+                                <option value="Double">Double</option>
+                                <option value="Studio">Studio</option>
+                                <option value="Mini-Suite">Mini-Suite</option>
+                                <option value="Master Suite">Master Suite</option>
+                                <option value="Apostle Suite">Apostle Suite</option>
+                            </select>                    
+                        </div>
+                        <div>
+                            <label for="guestAdult">Adult Guests in Room:* </label>
+                            <select required name="guestAdult" id="guestAdult">
+                                <option value = "" disabled></option>
+                                <option value = "0">0</option>
+                                <option value = "1">1</option>
+                                <option value ="2">2</option>
+                                <option value ="3">3</option>
+                                <option value ="4">4</option>
+                                <option value ="5">5</option>
+                                <option value ="6">6</option>
+                                <option value ="7">7</option>
+                                <option value ="8">8</option>
+                                <option value ="9">9</option>
+                                <option value ="10">10</option>
+                            </select>
+                                           
+                        </div>
+                        <div>
+                            <label for="guestChildren">Chilren Guests in Room:* </label>
+                            <select required name="guestChildren" id="guestChildren">
+                                <option value = "" disabled></option>
+                                <option value = "0">0</option>
+                                <option value = "1">1</option>
+                                <option value ="2">2</option>
+                                <option value ="3">3</option>
+                                <option value ="4">4</option>
+                                <option value ="5">5</option>
+                                <option value ="6">6</option>
+                                <option value ="7">7</option>
+                                <option value ="8">8</option>
+                                <option value ="9">9</option>
+                                <option value ="10">10</option>
+                            </select>              
+                        </div>
+                        <div>
+                            <input class = "add_room" type="button" value="Add room">
+                        </div>
+                        
                     </div>
-                    <div>
-                        <label for="guestChildren">Chilren Guests Number:* </label>
-                        <input type="number" id="guestChildren" name="guestChildren" required>                
-                    </div>
-                    <div>
-                        <label for="roomType">Room Type:* </label>
-                        <select name="roomType" id="roomType" required>
-                            <option selected disabled>Select Room Type ...</option>
-                            <option value="Single">Single</option>
-                            <option value="Double">Double</option>
-                            <option value="Studio">Studio</option>
-                            <option value="Mini-Suite">Mini-Suite</option>
-                            <option value="Master Suite">Master Suite</option>
-                            <option value="Apostle Suite">Apostle Suite</option>
-                        </select>                    
+                    <div id = "room-selection">
+                        <!-- <div id="roomitem-%id%" class = "room-item">
+                            <p>1 x <span class ="room-type-display">Master Suite</span> with <span class = "people-display">1 adult & 3 children</span>.</p>
+                            <button class="btn"><i class="fa fa-close"></i></button>
+                        </div> -->
+                    
                     </div>
                     <div>
                         <label for="comments">Comments/Special Accommodations:</label>
@@ -188,5 +231,6 @@
             </ul>
         </section>
     </footer>
+<script src="scripts/form-room-selection.js"></script>
 </body>
 </html>
