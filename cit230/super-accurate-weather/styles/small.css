@@ -34,7 +34,7 @@ html {  box-sizing: border-box; }
 
 body{
     min-width: 300px;
-    background-image: url("/cit230/lesson11/images/preston-background.jpg");
+    background-image: url("/cit230/super-accurate-weather/images/preston-background.jpg");
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
@@ -227,7 +227,7 @@ footer p{
 }
 
 #preston .heroimg{
-    background-image: url("/cit230/lesson11/images/preston-cover.jpg");
+    background-image: url("/cit230/super-accurate-weather/images/preston-cover.jpg");
 
 }
 .heroimg{
@@ -315,7 +315,7 @@ main a:visited{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: 4px #353535 solid;
-    background-image: url("/cit230/lesson11/images/weather-map.jpg");
+    background-image: url("/cit230/super-accurate-weather/images/weather-map.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -438,19 +438,19 @@ main a:visited{
 
 /*-----------------FISH HAVEN PAGE------------------ */
 #fish-haven .heroimg{
-    background-image: url("/cit230/lesson11/images/fish-haven.jpg")
+    background-image: url("/cit230/super-accurate-weather/images/fish-haven.jpg")
 }
 
 /*-----------------SODA SPRING PAGE------------------ */
 #soda-springs .heroimg{
-    background-image: url("/cit230/lesson11/images/soda-springs.jpg")
+    background-image: url("/cit230/super-accurate-weather/images/soda-springs.jpg")
 }
 
 /*-----------------GALLERY PAGE------------------ */
 
 
 #weather-gallery-title{
-    background-image: url("/cit230/lesson11/images/weather-gallery-cover.jpg");
+    background-image: url("/cit230/super-accurate-weather/images/weather-gallery-cover.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
